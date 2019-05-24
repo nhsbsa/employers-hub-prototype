@@ -1,0 +1,45 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  EA Code - Employer Hub - NHSBSA
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-full">
+      <a href="index.html" class="link-back">Back</a>
+
+      <h1 class="heading-xlarge">
+        <span class="heading-secondary">Employer hub</span>
+        Which EA Code do you want to view?
+      </h1>
+
+      <form action="" method="get" class="form">
+        <fieldset>
+          <legend class="visuallyhidden">Which EA Code do you want to view?</legend>
+
+          <div class="form-text">
+            <div class="form-group">
+              <label class="form-label" for="ea-code">Enter an EA Code</label>
+              <input class="form-control" id="ea-code" name="ea-code" type="text">
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- button link
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+        -->
+
+        <a href="user-group.html" role="button" class="button">Continue</a>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

@@ -1,81 +1,58 @@
 {% extends "layout_bsa.html" %}
 
 {% block page_title %}
-  Help paying for NHS Costs prototype
+  Log in - Employer Hub - NHSBSA
 {% endblock %}
 
 {% block content %}
 
 <main id="content" role="main">
-
   <div class="grid-row">
-  <div class="column-two-thirds">
+    <div class="column-full">
 
-        <h1 class="heading-xlarge">
-          <span class="heading-secondary">NHSBSA Design</span>
-          Prototype template
-        </h1>
+      <h1 class="heading-xlarge">
+        <span class="heading-secondary">Employer hub</span>
+        Log in using MCP credentials
+      </h1>
 
-  <h2 class="heading-medium">Common pages</h2>
+      <form action="" method="get" class="form">
+        <fieldset>
+          <legend class="visuallyhidden">Log in using MCP credentials</legend>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Link</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a href="common-pages/start-page">Start page</a></td>
-        <td>Start page of your service</td>
-      </tr>
+          <div class="form-text">
+            <div class="form-group">
+              <label class="form-label" for="username">Username</label>
+              <input class="form-control" id="username" name="username" type="text">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="password">Password</label>
+              <input class="form-control" id="password" name="password" type="text">
+            </div>
+          </div>
+        </fieldset>
 
-      <tr>
-        <td><a href="common-pages/name">Name page</a></td>
-        <td>Full name</td>
-      </tr>
+        <!-- button link
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+        -->
 
-      <tr>
-        <td><a href="common-pages/dob">Date of birth page</a></td>
-        <td>Date of birth</td>
-      </tr>
+        <a href="ea-code.html" role="button" class="button">Sign in</a>
 
-      <tr>
-        <td><a href="common-pages/post-address">Postal address page</a></td>
-        <td>Address</td>
-      </tr>
+      </form>
 
-      <tr>
-        <td><a href="common-pages/nhs-number">NHS number</a></td>
-        <td>Asking for an NHS number</td>
-      </tr>
+      <p style="padding-top: 15px;"><a href="#">Create an account</a></p>
 
-       <tr>
-        <td><a href="common-pages/yes-no">Yes or no question</a></td>
-        <td>Asking a yes or no question</td>
-      </tr>
+      <div class="form-group">
+        <h2 class="heading-large">Problems signing in</h2>
+        <ul class="list">
+          <li><a href="#">I have forgotten my password</a></li>
+          <li><a href="#">I have forgotten my username</a></li>
+        </ul>
+      </div>
 
-       <tr>
-        <td><a href="common-pages/yes-no">checkbox</a></td>
-        <td>Asking multi answer question</td>
-      </tr>
-
-       <tr>
-        <td><a href="common-pages/check-your-answers">Check your answers page</a></td>
-        <td>For each end of section/ application</td>
-      </tr>
-
-    </tbody>
-  </table>
-
-  
+    </div>
   </div>
-
-</div>
-
 </main>
 
 {% endblock %}
-
-
