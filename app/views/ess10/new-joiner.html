@@ -1,0 +1,116 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  New joiner - Pensions Online - NHSBSA
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-full">
+      <a href="#" class="link-back">Back</a>
+
+      <h1 class="heading-xlarge">
+        <span class="heading-secondary">Pensions Online</span>
+        Enter new joiner details
+      </h1>
+
+      <form action="" method="get" class="form">
+        <fieldset>
+          <legend class="visuallyhidden">Enter new joiner details</legend>
+
+          <div class="form-text">
+            <div class="form-group">
+              <label class="form-label" for="national-insurance-number">
+                National Insurance number
+              </label>
+              <p class="form-hint">It's on your National Insurance card, benefit letter, payslip or P60. For example, ‘QQ 12 34 56 C’.</p>
+              <input class="form-control" id="national-insurance-number" name="national-insurance-number" type="text"
+              aria-describedby="national-insurance-number-hint" spellcheck="false">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="surname">Surname</label>
+              <input class="form-control" id="surname" type="text">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="forename">Forename</label>
+              <input class="form-control" id="forename" type="text">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="former-surname">Former surname</label>
+              <input class="form-control" id="former-surname" type="text">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="dob-date">
+                Enter date of birth
+              </label>
+              <p class="form-hint">For example, 31 3 1980</p>
+              <div class="form-date">
+                <div class="form-group form-group-day">
+                  <label for="dob-date-day">Day</label> <input class="form-control" id="dob-date-day" max="31" min="0"
+                  name="dob-date-day" pattern="[0-9]*" type="number">
+                </div>
+                <div class="form-group form-group-month">
+                  <label for="dob-date-month">Month</label> <input class="form-control" id="dob-date-month" max="12" min="0"
+                  name="dob-date-month" pattern="[0-9]*" type="number">
+                </div>
+                <div class="form-group form-group-year">
+                  <label for="dob-date-year">Year</label> <input class="form-control" id="dob-date-year" max="2014" min="0"
+                  name="dob-date-year" pattern="[0-9]*" type="number">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="commencement-date">
+                Enter date of commencement
+              </label>
+              <p class="form-hint">For example, 12 11 2007</p>
+              <div class="form-date">
+                <div class="form-group form-group-day">
+                  <label for="commencement-date-day">Day</label> <input class="form-control" id="commencement-date-day" max="31" min="0"
+                  name="commencement-date-day" pattern="[0-9]*" type="number">
+                </div>
+                <div class="form-group form-group-month">
+                  <label for="commencement-date-month">Month</label> <input class="form-control" id="commencement-date-month" max="12" min="0"
+                  name="commencement-date-month" pattern="[0-9]*" type="number">
+                </div>
+                <div class="form-group form-group-year">
+                  <label for="commencement-date-year">Year</label> <input class="form-control" id="commencement-date-year" max="2014" min="0"
+                  name="commencement-date-year" pattern="[0-9]*" type="number">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="sd-membership-number">
+                SD Membership number
+              </label>
+              <p class="form-hint">Any hint text will go here...</p>
+              <input class="form-control" id="sd-membership-number" name="sd-membership-number" type="text"
+              aria-describedby="sd-membership-number-hint" spellcheck="false">
+            </div>
+
+          </div>
+        </fieldset>
+
+        <!-- button link
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+        -->
+
+        <a href="#" role="button" class="button">Continue</a>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

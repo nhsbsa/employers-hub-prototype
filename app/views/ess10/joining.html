@@ -1,0 +1,297 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  Joining or rejoining - Pensions Online - NHSBSA
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-full">
+      <a href="#" class="link-back">Back</a>
+
+      <h1 class="heading-xlarge">
+        <span class="heading-secondary">Pensions Online</span>
+        Joining or rejoining the scheme
+      </h1>
+
+      <form action="" method="get" class="form">
+        <fieldset>
+          <legend class="visuallyhidden">Joining or rejoining the scheme</legend>
+
+          <div class="form-text">
+            <div class="form-group">
+              <label class="form-label" for="national-insurance-number">
+                1. National Insurance number
+              </label>
+              <p class="form-hint">It's on your National Insurance card, benefit letter, payslip or P60. For example, ‘QQ 12 34 56 C’.</p>
+              <input class="form-control" id="national-insurance-number" name="national-insurance-number" type="text"
+              aria-describedby="national-insurance-number-hint" spellcheck="false">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="sd-membership-number">
+                2. SD Membership number
+              </label>
+              <p class="form-hint">Any hint text will go here...</p>
+              <input class="form-control" id="sd-membership-number" name="sd-membership-number" type="text"
+              aria-describedby="sd-membership-number-hint" spellcheck="false">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="dob-date">
+                3. Enter date of birth
+              </label>
+              <p class="form-hint">For example, 31 3 1980</p>
+              <div class="form-date">
+                <div class="form-group form-group-day">
+                  <label for="dob-date-day">Day</label> <input class="form-control" id="dob-date-day" max="31" min="0"
+                  name="dob-date-day" pattern="[0-9]*" type="number">
+                </div>
+                <div class="form-group form-group-month">
+                  <label for="dob-date-month">Month</label> <input class="form-control" id="dob-date-month" max="12" min="0"
+                  name="dob-date-month" pattern="[0-9]*" type="number">
+                </div>
+                <div class="form-group form-group-year">
+                  <label for="dob-date-year">Year</label> <input class="form-control" id="dob-date-year" max="2014" min="0"
+                  name="dob-date-year" pattern="[0-9]*" type="number">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="dob-verified">
+                4. Has date of birth been verified?
+              </label>
+              <div class="inline">
+                <div class="multiple-choice">
+                  <input id="dob-verified-1" type="radio" name="dob-verified-group" value="Yes">
+                  <label for="dob-verified-1">Yes</label>
+                </div>
+                <div class="multiple-choice">
+                  <input id="dob-verified-2" type="radio" name="dob-verified-group" value="No">
+                  <label for="dob-verified-2">No</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="surname">5. Surname</label>
+              <input class="form-control" id="surname" type="text">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="forename">6. Other names</label>
+              <input class="form-control" id="forename" type="text">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="former-surname">7. Former surname (if any, optional)</label>
+              <input class="form-control" id="former-surname" type="text">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="title">8. Title</label>
+              <select class="form-control" id="title">
+                <option>Select</option>
+                <option>Dr</option>
+                <option>Miss</option>
+                <option>Mr</option>
+                <option>Mrs</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="sex">9. Sex</label>
+              <div class="multiple-choice">
+                <input id="sex-1" type="radio" name="radio-sex-group" value="Female">
+                <label for="sex-1">Female</label>
+              </div>
+              <div class="multiple-choice">
+                <input id="sex-2" type="radio" name="radio-sex-group" value="Male">
+                <label for="sex-2">Male</label>
+              </div>
+              <div class="multiple-choice" data-target="other-input">
+                <input id="sex-3" type="radio" name="radio-sex-group" value="Other">
+                <label for="sex-3">Other</label>
+              </div>
+              <div class="panel panel-border-narrow js-hidden" id="other-input">
+                <label class="form-label" for="other-sex">Enter sex</label>
+                <input class="form-control" name="other-sex" type="text" id="other-sex">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="payroll">10. Your payroll reference number</label>
+              <input class="form-control" id="payroll" type="text">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="employment-place">11. Name of hospital, community or other place of employment</label>
+              <input class="form-control" id="employment-place" type="text">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="ea-code">12. EA Code</label>
+              <input class="form-control" id="ea-code" type="text">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="pensionable-date">13. Date member became pensionable in present employment</label>
+              <div class="form-date">
+                <div class="form-group form-group-day">
+                  <label for="pensionable-date-day">Day</label> <input class="form-control" id="pensionable-date-day" max="31" min="0"
+                  name="pensionable-date-day" pattern="[0-9]*" type="number">
+                </div>
+                <div class="form-group form-group-month">
+                  <label for="pensionable-date-month">Month</label> <input class="form-control" id="pensionable-date-month" max="12" min="0"
+                  name="pensionable-date-month" pattern="[0-9]*" type="number">
+                </div>
+                <div class="form-group form-group-year">
+                  <label for="pensionable-date-year">Year</label> <input class="form-control" id="pensionable-date-year" max="2014" min="0"
+                  name="pensionable-date-year" pattern="[0-9]*" type="number">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="capacity-employed">14. Capacity in which employed</label>
+              <input class="form-control" id="capacity-employed" type="text">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="capacity-code">15. Capacity code</label>
+              <select class="form-control" id="capacity-code">
+                <option>Select</option>
+                <option>Option 1</option>
+                <option>Option 2</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="capacity-code">16. Type of employment</label>
+              <select class="form-control" id="capacity-code">
+                <option>Select</option>
+                <option>Option 1</option>
+                <option>Option 2</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="employment-type">17. Is employment Whole time, Part time or Max part time specialist</label>
+              <div class="multiple-choice">
+                <input id="sex-1" type="radio" name="employment-type-group" value="Whole time">
+                <label for="sex-1">Whole time</label>
+              </div>
+              <div class="multiple-choice">
+                <input id="sex-2" type="radio" name="employment-type-group" value="Part time">
+                <label for="sex-2">Part time</label>
+              </div>
+              <div class="multiple-choice">
+                <input id="sex-3" type="radio" name="employment-type-group" value="Max part time">
+                <label for="sex-3">Max part time</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="locum">18. Is this a locum employment</label>
+              <div class="multiple-choice">
+                <input id="locum-1" type="radio" name="locum-group" value="Yes">
+                <label for="locum-1">Yes</label>
+              </div>
+              <div class="multiple-choice">
+                <input id="locum-2" type="radio" name="locum-group" value="No">
+                <label for="locum-2">No</label>
+              </div>
+              <div class="multiple-choice">
+                <input id="locum-3" type="radio" name="locum-group" value="Don't know">
+                <label for="locum-3">Don't know</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="session">
+                19. Is employment 'as and when' sessions or hours?
+              </label>
+              <div class="inline">
+                <div class="multiple-choice">
+                  <input id="session-1" type="radio" name="session-group" value="As and when">
+                  <label for="session-1">As and when</label>
+                </div>
+                <div class="multiple-choice">
+                  <input id="session-2" type="radio" name="session-group" value="Hours">
+                  <label for="session-2">Hours</label>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="heading-medium">Only answer this question if the employment is part-time sessional</h3>
+            <div class="form-group">
+              <label class="form-label" for="session-group">20. What portion of whole time does the member work?</label>
+                <label class="form-label" for="session-actual">Actual</label>
+              <input class="form-control" id="session-actual" type="text">
+                <label class="form-label" for="session-whole-time">Whole time</label>
+              <input class="form-control" id="session-whole-time" type="text">
+            </div>
+
+            <h3 class="heading-medium">Only answer this question if the employment is part-time hourly</h3>
+            <div class="form-group">
+              <label class="form-label" for="hourly-group">21. Please give the number of hours worked as a proportion of whole-time</label>
+              <p class="form-hint">Give your answers to 2 decimal places.</p>
+                <label class="form-label" for="hourly-actual">Actual</label>
+              <input class="form-control" id="hourly-actual" type="text">
+                <label class="form-label" for="hourly-whole-time">Whole time</label>
+              <input class="form-control" id="hourly-whole-time" type="text">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="mho">22. Is the member classed as MHO in this employment?</label>
+              <div class="multiple-choice">
+                <input id="mho-1" type="radio" name="mho-group" value="Yes">
+                <label for="mho-1">Yes</label>
+              </div>
+              <div class="multiple-choice">
+                <input id="mho-2" type="radio" name="mho-group" value="No">
+                <label for="mho-2">No</label>
+              </div>
+              <div class="multiple-choice">
+                <input id="mho-3" type="radio" name="mho-group" value="Don't know">
+                <label for="mho-3">Don't know</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for=""></label>
+              <input class="form-control" id="" type="">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for=""></label>
+              <input class="form-control" id="" type="">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for=""></label>
+              <input class="form-control" id="" type="">
+            </div>
+
+
+          </div>
+        </fieldset>
+
+        <!-- button link
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+        -->
+
+        <a href="#" role="button" class="button">Continue</a>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
