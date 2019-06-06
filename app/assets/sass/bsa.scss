@@ -407,6 +407,9 @@ td.strong {
   }
 }
 
+.inline .multiple-choice:first-child { margin-top: 0; }
+input[type=text] + .multiple-choice { margin-top: 15px; }
+
 .single-line {
    line-height: 175%;
  }
