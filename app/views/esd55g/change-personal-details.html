@@ -1,0 +1,161 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  Change personal details - External SD55G - Pensions Online - NHSBSA
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <div class="service-header">
+        <ul class="list">
+          <li><a class="log-out-link" id="logout-link" href="/employer-service/fic/logout">Logout</a></li>
+          <li><a class="log-out-link" id="change-password-link" href="/employer-service/fic/change-password">Change your password</a></li>
+        </ul>
+        <a href="/e-forms-tiles.html" class="link-back">Back</a>
+      </div>
+
+      <h1 class="heading-xlarge">
+        <span class="heading-secondary">Pensions Online - SD55G</span>
+        Change of Personal details
+      </h1>
+
+      <form action="" method="get" class="form">
+        <fieldset>
+          <legend class="visuallyhidden">Change of personal details</legend>
+
+          <div class="form-text">
+
+            <h3 class="heading-medium">Section A - Details shown on current form SD55</h3>
+
+            <div class="form-group">
+              <label class="form-label" for="surname">Surname</label>
+              <p>Smith</p>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="name">Other names</label>
+              <p>John</p>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="title">Title</label>
+              <p>Mr</p>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="ea-code">EA / GP Code</label>
+              <p>06</p>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="national-insurance-number">National Insurance number</label>
+              <p>QQ 12 34 56 C</p>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="sd-number">SD Membership number</label>
+              <p>12345678</p>
+            </div>
+
+            <h3 class="heading-medium">Section B - Changes required</h3>
+            <div class="form-group">
+              <label class="form-label" for="revised-surname">Revised surname</label>
+              <input class="form-control" id="revised-surname" type="text">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="revised-forenames">Revised forenames</label>
+              <input class="form-control" id="payroll" type="text">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="revised-title">Revised title</label>
+              <p class="form-hint">For example, Mr, Mrs, Miss, Ms, Dr</p>
+              <input class="form-control" id="revised-title" type="text">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="address">Revised address</label>
+              <label class="form-label" for="address-line-1"><span class="visuallyhidden">Building and street line 1 of 3</span></label>
+              <input class="form-control" id="address-line-1" type="text">
+              <label class="form-label" for="address-line-2"><span class="visuallyhidden">Building and street line 2 of 3</span></label>
+              <input class="form-control" id="address-line-2" type="text">
+              <label class="form-label" for="address-line-3"><span class="visuallyhidden">Building and street line 3 of 3</span></label>
+              <input class="form-control" id="address-line-3" type="text">
+              <label class="form-label" for="address-line-4"><span class="visuallyhidden">Town or city</span></label>
+              <input class="form-control" id="address-line-4" type="text">
+              <label class="form-label" for="address-postcode">Revised postcode</label>
+              <input class="form-control" id="address-postcode" type="text">
+            </div>
+
+
+            <div class="form-group">
+              <label class="form-label" for="revised-ni">Revised National Insurance number</label>
+              <p class="form-hint">If the National Insurance number is being changed or is being notified
+              for the first time, please complete the box below</p>
+              <input class="form-control" id="revised-ni" type="text">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="dob">Date of birth</label>
+              <p class="form-hint">If the date of birth is being changed or an existing date of birth is
+              being verified, please complete the boxes below. <br />For example, 31 3 1980</p>
+              <div class="form-date">
+                <div class="form-group form-group-day">
+                  <label for="dob-day">Day</label> <input class="form-control" id="dob-day" max="31" min="0"
+                  name="dob-day" pattern="[0-9]*" type="number">
+                </div>
+                <div class="form-group form-group-month">
+                  <label for="dob-month">Month</label> <input class="form-control" id="dob-month" max="12" min="0"
+                  name="dob-month" pattern="[0-9]*" type="number">
+                </div>
+                <div class="form-group form-group-year">
+                  <label for="dob-year">Year</label> <input class="form-control" id="dob-year" max="2014" min="0"
+                  name="dob-year" pattern="[0-9]*" type="number">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="dob-verified">
+                Has date of birth been verified?
+              </label>
+              <div class="inline">
+                <div class="multiple-choice">
+                  <input id="dob-verified-1" type="radio" name="dob-verified-group" value="Yes">
+                  <label for="dob-verified-1">Yes</label>
+                </div>
+                <div class="multiple-choice">
+                  <input id="dob-verified-2" type="radio" name="dob-verified-group" value="No">
+                  <label for="dob-verified-2">No</label>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </fieldset>
+
+        <!-- button link
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+        -->
+
+        <a href="personal-details.html" role="button" class="button">Continue</a>
+
+      </form>
+
+
+      <hr />
+      <p><a href="#">Print this page</a></p>
+      <p><a href="/employer-services.html">Back to Employer Services home</a></p>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
