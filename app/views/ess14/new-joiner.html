@@ -1,24 +1,32 @@
 {% extends "layout_bsa.html" %}
 
 {% block page_title %}
-  New joiner - Pensions Online - NHSBSA
+  New joiner - External SS14 - Pensions Online - NHSBSA
 {% endblock %}
 
 {% block content %}
 
 <main id="content" role="main">
+
+  <div class="service-header">
+    <ul class="list">
+      <li><a class="log-out-link" id="logout-link" href="/employer-service/fic/logout">Logout</a></li>
+      <li><a class="log-out-link" id="change-password-link" href="/employer-service/fic/change-password">Change your password</a></li>
+    </ul>
+    <a href="/e-forms-tiles.html" class="link-back">Back</a>
+  </div>
+
   <div class="grid-row">
     <div class="column-two-thirds">
-      <a href="#" class="link-back">Back</a>
 
       <h1 class="heading-xlarge">
-        <span class="heading-secondary">Pensions Online</span>
-        Enter new joiner details
+        <span class="heading-secondary">Pensions Online - SS14 Joiner</span>
+        TBC
       </h1>
 
       <form action="" method="get" class="form">
         <fieldset>
-          <legend class="visuallyhidden">Enter new joiner details</legend>
+          <legend class="visuallyhidden">TBC</legend>
 
           <div class="form-text">
             <div class="form-group">
@@ -91,7 +99,7 @@
               <label class="form-label" for="sd-membership-number">
                 SD Membership number
               </label>
-              <p class="form-hint">Any hint text will go here...</p>
+              <p class="form-hint">This is the eight digit number</p>
               <input class="form-control" id="sd-membership-number" name="sd-membership-number" type="text"
               aria-describedby="sd-membership-number-hint" spellcheck="false">
             </div>
@@ -105,9 +113,13 @@
         </div>
         -->
 
-        <a href="#" role="button" class="button">Continue</a>
+        <a href="joining.html" role="button" class="button">Continue</a>
 
       </form>
+
+      <hr />
+      <p><a href="#">Print this page</a></p>
+      <p><a href="/employer-services.html">Back to Employer Services home</a></p>
 
     </div>
   </div>

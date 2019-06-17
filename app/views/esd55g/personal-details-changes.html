@@ -1,0 +1,106 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  TBC - External SD55G - Pensions Online - NHSBSA
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="service-header">
+    <ul class="list">
+      <li><a class="log-out-link" id="logout-link" href="/employer-service/fic/logout">Logout</a></li>
+      <li><a class="log-out-link" id="change-password-link" href="/employer-service/fic/change-password">Change your password</a></li>
+    </ul>
+    <a href="change-personal-details.html" class="link-back">Back</a>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        <span class="heading-secondary">Pensions Online - SD55G Personal details changes</span>
+        TBC
+      </h1>
+
+      <form action="" method="get" class="form">
+        <fieldset>
+          <legend class="visuallyhidden">TBC</legend>
+
+          <div class="form-text">
+
+            <div class="form-group">
+              <label class="form-label" for="surname-original">Surname - original</label>
+              <p>Smith</p>
+              <label class="form-label" for="surname-original">Surname - changed data</label>
+              <p>Humphreys</p>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="name">Other names - original</label>
+              <p>John</p>
+              <label class="form-label" for="name">Other names - changed data</label>
+              <p>Danny</p>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="title">Title</label>
+              <p>Mr</p>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="ea-code">EA / GP Code</label>
+              <p>06</p>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="national-insurance-number">National Insurance number</label>
+              <p>QQ 12 34 56 C</p>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="sd-number">SD Membership number</label>
+              <p>12345678</p>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="address">Address</label>
+              <p>20 Some Street</p>
+              <p>Liverpool</p>
+              <label class="form-label" for="postcode">Postcode</label>
+              <p>L1A 2BC</p>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="dob">Date of birth</label>
+              <p>31 3 1980</p>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="dob-verified">Has date of birth been verified?</label>
+              <p>Yes</p>
+            </div>
+
+          </div>
+        </fieldset>
+
+        <!-- button link
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+        -->
+
+        <a href="/e-forms-tiles.html" role="button" class="button">Continue</a>
+
+      </form>
+
+      <hr />
+      <p><a href="#">Print this page</a></p>
+      <p><a href="/employer-services.html">Back to Employer Services home</a></p>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
