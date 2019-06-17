@@ -458,18 +458,32 @@ input[type=text] + .multiple-choice { margin-top: 15px; }
 //footer
 .unbranded {
   #footer {
+    /* pension website footer
     height: auto;
     background: #fff url(../images/bsa/footerBanner_corporate.png) no-repeat 30% center;
     background-size: cover;
     border-top: none;
+    */
+    background-color: #dee0e2;
+    border-top: 1px solid #AFAFAF;
+
     .footer-wrapper {
-      padding-top: 60px;
+      /*padding-top: 60px;
       background: none;
       margin: 0 auto;
       max-width: 960px;
+      */
+
+        @extend %site-width-container;
+        background-color: #dee0e2;
+        padding-top: 20px;
+
+        @include media(tablet) {
+          padding-top: 60px;
+        }
     }
     .footer-meta {
-      color: #fff;
+      color: #454a4c;
       padding-bottom: 60px;
       clear: both;
       font-size: 0;
@@ -477,7 +491,7 @@ input[type=text] + .multiple-choice { margin-top: 15px; }
         font-size: 15px;
         line-height: 1.5;
       }
-      a { color: #fff; }
+      a { color: #454a4c; }
       .calls {
         margin: 15px 0;
         p {
@@ -485,7 +499,12 @@ input[type=text] + .multiple-choice { margin-top: 15px; }
           padding: 0;
         }
       }
+      .footer-meta-inner .open-government-licence p {
+      font-size: 16px;
+      line-height: 1.25;
+      }
     }
+
   }
 }
 
