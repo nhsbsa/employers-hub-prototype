@@ -1,0 +1,244 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  Update - External SD55E - Pensions Online - NHSBSA
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="service-header">
+    <ul class="list">
+      <li><a class="log-out-link" id="logout-link" href="/employer-service/fic/logout">Sign out</a></li>
+      <li><a class="log-out-link" id="change-password-link" href="/employer-service/fic/change-password">Change your password</a></li>
+    </ul>
+    <a href="employment-details.html" class="link-back">Back</a>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-full">
+
+      <h1 class="heading-xlarge">
+        <span class="heading-secondary">Pensions Online - SD55E</span>
+        Update
+      </h1>
+
+      <form action="" method="get" class="form">
+        <fieldset>
+          <legend class="visuallyhidden">Update</legend>
+
+          <div class="form-text">
+
+            <div class="form-group">
+              <label class="form-label" for="forename">Forename</label>
+              <p>John</p>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="surname">Surname</label>
+              <p>Smith</p>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="dob">Date of birth</label>
+              <p>18 11 1997</p>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="sd-number">SD Ref</label>
+              <p>12345678</p>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="ni-number">National Insurance number</label>
+              <p>QQ 12 34 56 C</p>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="sd-number">Last date of membership, or last year end shown on SD55/SD55J,
+              or magnetic tape</label>
+              <p>14 5 2019</p>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="ea-code">EA / GP Code</label>
+              <p>3465</p>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="ni-number">Your payroll reference</label>
+              <p>98765432</p>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="employment-identifier">Employment Identifier</label>
+              <p>1</p>
+            </div>
+
+            <h3 class="heading-medium">Important note</h3>
+            <p>If you amend any figure(s) in boxes 23 - 28  this may affect other figures within these boxes and these
+            will require amendment also.</p>
+
+            <h3 class="heading-medium">Data for 31 March 2018</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col" style="width: 55%;">Box number as shown on SD55</th>
+                  <th class="numeric" scope="col" style="width: 20%;">Current data</th>
+                  <th scope="col" style="width: 25%;">Revised amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>23. Employee Conts (no AVC's)</td>
+                  <td class="numeric">1120.19</td>
+                  <td><input class="form-control form-control-3-4" id="employee-conts" type="text"></td>
+                </tr>
+                <tr>
+                  <td>24. Employee Pensionable Pay</td>
+                  <td class="numeric">20003.44</td>
+                  <td><input class="form-control form-control-3-4" id="employee-pensionable-pay" type="text"></td>
+                </tr>
+                <tr>
+                  <td>25. Contribution Rate</td>
+                  <td class="numeric">5.6</td>
+                  <td>
+                    <select class="form-control form-control-3-4" id="contribution-rate">
+                      <option>Select</option>
+                      <option>Option 1</option>
+                      <option>Option 2</option>
+                      <option>Option 3</option>
+                      <option>Option 4</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td>26. Employer Conts</td>
+                  <td class="numeric">2876.49</td>
+                  <td><input class="form-control form-control-3-4" id="employer-conts" type="text"></td>
+                </tr>
+                <tr>
+                  <td>27. Employer Pensionable Pay</td>
+                  <td class="numeric">20003.44</td>
+                  <td><input class="form-control form-control-3-4" id="employer-pensionable-pay" type="text"></td>
+                </tr>
+                <tr>
+                  <td>28. Employees Gross Pay</td>
+                  <td class="numeric">20713.45</td>
+                  <td><input class="form-control form-control-3-4" id="employees-gross-pay" type="text"></td>
+                </tr>
+                <tr>
+                  <td>29. AVC's Paid (no money purchase)</td>
+                  <td class="numeric">0</td>
+                  <td><input class="form-control form-control-3-4" id="avc-paid" type="text"></td>
+                </tr>
+                <tr>
+                  <td>30. ERRBO contributions</td>
+                  <td class="numeric">0</td>
+                  <td><input class="form-control form-control-3-4" id="errbo-contributions" type="text"></td>
+                </tr>
+                <tr>
+                  <td>31. Non-Pensionable days</td>
+                  <td class="numeric"></td>
+                  <td><input class="form-control form-control-3-4" id="non-pensionable-days" type="text"></td>
+                </tr>
+                <tr>
+                  <td>32. Part time staff (enter revised amount of pensionable hours or paid sessions)</td>
+                  <td class="numeric">0</td>
+                  <td><input class="form-control form-control-3-4" id="part-time-staff" type="text"></td>
+                </tr>
+                <tr>
+                  <td>33. Identifier</td>
+                  <td class="numeric"></td>
+                  <td><input class="form-control form-control-3-4" id="identifier-1" type="text"></td>
+                </tr>
+                <tr>
+                  <td>34. Contributions</td>
+                  <td class="numeric"></td>
+                  <td><input class="form-control form-control-3-4" id="contributions-1" type="text"></td>
+                </tr>
+                <tr>
+                  <td>35. Instalments</td>
+                  <td class="numeric"></td>
+                  <td><input class="form-control form-control-3-4" id="instalments-1" type="text"></td>
+                </tr>
+                <tr>
+                  <td>36. Identifier</td>
+                  <td class="numeric"></td>
+                  <td><input class="form-control form-control-3-4" id="identifier-2" type="text"></td>
+                </tr>
+                <tr>
+                  <td>37. Contributions</td>
+                  <td class="numeric"></td>
+                  <td><input class="form-control form-control-3-4" id="contributions-2" type="text"></td>
+                </tr>
+                <tr>
+                  <td>38. Instalments</td>
+                  <td class="numeric"></td>
+                  <td><input class="form-control form-control-3-4" id="instalments-2" type="text"></td>
+                </tr>
+                <tr>
+                  <td>39. Identifier</td>
+                  <td class="numeric"></td>
+                  <td><input class="form-control form-control-3-4" id="identifier-3" type="text"></td>
+                </tr>
+                <tr>
+                  <td>40. Contributions</td>
+                  <td class="numeric"></td>
+                  <td><input class="form-control form-control-3-4" id="contributions-3" type="text"></td>
+                </tr>
+                <tr>
+                  <td>41. Instalments</td>
+                  <td class="numeric"></td>
+                  <td><input class="form-control form-control-3-4" id="instalments-3" type="text"></td>
+                </tr>
+                <tr>
+                  <td>42. NI earnings (enter revised amount of employees contracted out NI earnings between lower and
+                    upper earnings limit in tax year of termination - whole pounds only)</td>
+                  <td class="numeric"></td>
+                  <td><input class="form-control form-control-3-4" id="ni-earnings" type="text"></td>
+                </tr>
+                <tr>
+                  <td>43. NI earnings (enter revised amount of employees contracted out NI earnings between lower and upper
+                    earnings limit in tax before termination - whole pounds only)</td>
+                  <td class="numeric"></td>
+                  <td><input class="form-control form-control-3-4" id="ni-earnings-2" type="text"></td>
+                </tr>
+                <tr>
+                  <td>44. Enter arrears of AVC's (no money purchase - enter revised amount of arrears outstanding)</td>
+                  <td class="numeric"></td>
+                  <td><input class="form-control form-control-3-4" id="arrears-avc" type="text"></td>
+                </tr>
+                <tr>
+                  <td>45. Arrears of Contributions (enter revised amount of arrears outstanding)</td>
+                  <td class="numeric"></td>
+                  <td><input class="form-control form-control-3-4" id="arrears-contributions" type="text"></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <br /><br />
+
+          </div>
+        </fieldset>
+
+        <!-- button link
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+        -->
+
+        <a href="overview.html" role="button" class="button">Continue</a>
+
+      </form>
+
+      <hr />
+      <p><a href="#">Print this page</a></p>
+      <p><a href="/employer-services.html">Back to Employer Services home</a></p>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
