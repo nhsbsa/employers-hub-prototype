@@ -1,0 +1,94 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  Employment deletion - Delete Employment - Pensions Online - NHSBSA
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="service-header">
+    <ul class="list">
+      <li><a class="log-out-link" id="logout-link" href="/employer-service/fic/logout">Sign out</a></li>
+      <li><a class="log-out-link" id="change-password-link" href="/employer-service/fic/change-password">Change your password</a></li>
+    </ul>
+    <a href="select-employee.html" class="link-back">Back</a>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-full">
+
+      <h1 class="heading-xlarge">
+        <span class="heading-secondary">Pensions Online</span>
+        Employment deletion
+      </h1>
+
+      <form action="" method="get" class="form">
+        <fieldset>
+          <legend class="visuallyhidden">Employment deletion</legend>
+
+          <div class="form-text">
+
+            <div class="form-group">
+              <label class="form-label" for="national-insurance-number">National Insurance number</label>
+              <p>QQ 12 34 56 C</p>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="sd-membership-number">SD Membership number</label>
+              <p>12345678</p>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="employee-id">Emp ID</label>
+              <p>1</p>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="ea-ref">EA reference</label>
+              <p>98765432</p>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="start-date">Start date</label>
+              <p>11 1 2016</p>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="updated-date">Updated date</label>
+              <p>14 6 2016</p>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="updated-reason">Updated reason</label>
+              <p>01 - Voluntary resignation or retirement</p>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="end-date">End date</label>
+              <p>14 6 2016</p>
+            </div>
+
+          </div>
+        </fieldset>
+
+        <!-- button link
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+        -->
+
+        <a href="confirm-delete.html" role="button" class="button">Continue</a>
+
+      </form>
+
+      <hr />
+      <p><a href="#">Print this page</a></p>
+      <p><a href="/employer-services.html">Back to Employer Services home</a></p>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
