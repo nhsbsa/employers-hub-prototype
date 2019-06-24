@@ -1,0 +1,68 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  Confirm employment deletion - Delete Employment - Pensions Online - NHSBSA
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="service-header">
+    <ul class="list">
+      <li><a class="log-out-link" id="logout-link" href="/employer-service/fic/logout">Sign out</a></li>
+      <li><a class="log-out-link" id="change-password-link" href="/employer-service/fic/change-password">Change your password</a></li>
+    </ul>
+    <a href="employment.html" class="link-back">Back</a>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-full">
+
+      <h1 class="heading-xlarge">
+        <span class="heading-secondary">Pensions Online - Delete Employment</span>
+        Are you sure you want to delete?
+      </h1>
+
+      <form action="" method="get" class="form">
+        <fieldset>
+          <legend class="visuallyhidden">Are you sure you want to delete?</legend>
+
+          <div class="form-text">
+            <div class="form-group">
+              <p>This employment contains earnings and contribution details.</p>
+              <p>Are you sure you want to delete employment 1 for the following member: 10030094?</p>
+              <div class="inline">
+                <div class="multiple-choice">
+                  <input id="delete-1" type="radio" name="delete-group" value="Yes">
+                  <label for="delete-1">Yes</label>
+                </div>
+                <div class="multiple-choice">
+                  <input id="delete-2" type="radio" name="delete-group" value="No">
+                  <label for="delete-2">No</label>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </fieldset>
+
+        <!-- button link
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+        -->
+
+        <a href="confirmation.html" role="button" class="button">Continue</a>
+
+      </form>
+
+      <hr />
+      <p><a href="#">Print this page</a></p>
+      <p><a href="/employer-services.html">Back to Employer Services home</a></p>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

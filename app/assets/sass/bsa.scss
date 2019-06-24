@@ -84,12 +84,25 @@ body {
   h1 {
     padding-top: 0;
     margin: 0;
+
+    #done-tick {
+      display: none;
+    }
   }
   h2 {
     line-height: 145%;
     font-size: 135%;
     padding-top: 0;
     margin: 10px 0 5px 0;
+  }
+  .heading-secondary {
+    color: white;
+  }
+
+  @media (min-width: 641px) {
+    .heading-xlarge {
+      margin-bottom: 1.25em;
+    }
   }
 }
 
@@ -711,6 +724,8 @@ input[type=text] + .multiple-choice { margin-top: 15px; }
 }
 
 .service-header {
+  float: left;
+  width: 100%;
   margin-bottom: 55px;
   ul {
     float: right;
