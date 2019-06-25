@@ -1,7 +1,7 @@
 {% extends "layout_bsa.html" %}
 
 {% block page_title %}
-  Employment deletion - Delete Employment - Pensions Online - NHSBSA
+  Open employment - Open Closed Employment - Pensions Online - NHSBSA
 {% endblock %}
 
 {% block content %}
@@ -20,13 +20,13 @@
     <div class="column-two-thirds">
 
       <h1 class="heading-xlarge">
-        <span class="heading-secondary">Pensions Online</span>
-        Employment deletion
+        <span class="heading-secondary">Pensions Online - Open Closed Employment</span>
+        Open employment
       </h1>
 
       <form action="" method="get" class="form">
         <fieldset>
-          <legend class="visuallyhidden">Employment deletion</legend>
+          <legend class="visuallyhidden">Open employment</legend>
 
           <div class="form-text">
 
@@ -56,8 +56,22 @@
             </div>
 
             <div class="form-group">
-              <label class="form-label" for="updated-date">Updated date</label>
-              <p>14 6 2016</p>
+              <label class="form-label" for="rewind-employment">Rewind employment to</label>
+              <p class="form-hint">For example, 15 1 2018</p>
+              <div class="form-date">
+                <div class="form-group form-group-day">
+                  <label for="rewind-employment-day">Day</label> <input class="form-control" id="rewind-employment-day" max="31" min="0"
+                  name="rewind-employment-day" pattern="[0-9]*" type="number">
+                </div>
+                <div class="form-group form-group-month">
+                  <label for="rewind-employment-month">Month</label> <input class="form-control" id="rewind-employment-month" max="12" min="0"
+                  name="rewind-employment-month" pattern="[0-9]*" type="number">
+                </div>
+                <div class="form-group form-group-year">
+                  <label for="rewind-employment-year">Year</label> <input class="form-control" id="rewind-employment-year" max="2014" min="0"
+                  name="rewind-employment-year" pattern="[0-9]*" type="number">
+                </div>
+              </div>
             </div>
 
             <div class="form-group">
@@ -79,7 +93,7 @@
         </div>
         -->
 
-        <a href="confirm-delete.html" role="button" class="button">Continue</a>
+        <a href="confirm-opening.html" role="button" class="button">Continue</a>
 
       </form>
 
