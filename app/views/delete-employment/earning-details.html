@@ -1,7 +1,7 @@
 {% extends "layout_bsa.html" %}
 
 {% block page_title %}
-  Confirm employment deletion - Delete Employment - Pensions Online - NHSBSA
+  Earnings and Contributions present - Delete Employment - Pensions Online - NHSBSA
 {% endblock %}
 
 {% block content %}
@@ -13,7 +13,7 @@
       <li><a class="log-out-link" id="logout-link" href="/employer-service/fic/logout">Sign out</a></li>
       <li><a class="log-out-link" id="change-password-link" href="/employer-service/fic/change-password">Change your password</a></li>
     </ul>
-    <a href="earning-details.html" class="link-back">Back</a>
+    <a href="employment.html" class="link-back">Back</a>
   </div>
 
   <div class="grid-row">
@@ -21,16 +21,16 @@
 
       <h1 class="heading-xlarge">
         <span class="heading-secondary">Pensions Online - Delete Employment</span>
-        Confirm deletion of employment
+        Earnings and Contributions present
       </h1>
 
       <form action="" method="get" class="form">
         <fieldset>
-          <legend class="visuallyhidden">Confirm deletion of employment</legend>
+          <legend class="visuallyhidden">Earnings and Contributions present</legend>
 
           <div class="form-text">
             <div class="form-group">
-              <p>Are you sure you want to delete employment 1 for the following member: 10030094?</p>
+              <p>This employment contains earnings and contribution details, do you wish to continue?</p>
               <div class="inline">
                 <div class="multiple-choice">
                   <input id="delete-1" type="radio" name="delete-group" value="Yes">
@@ -52,7 +52,7 @@
         </div>
         -->
 
-        <a href="confirmation.html" role="button" class="button">Continue</a>
+        <a href="confirm-delete.html" role="button" class="button">Continue</a>
 
       </form>
 
