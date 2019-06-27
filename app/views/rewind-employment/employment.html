@@ -1,0 +1,108 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  Rewind open employment - Rewind Employment - Pensions Online - NHSBSA
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="service-header">
+    <ul class="list">
+      <li><a class="log-out-link" id="logout-link" href="/employer-service/fic/logout">Sign out</a></li>
+      <li><a class="log-out-link" id="change-password-link" href="/employer-service/fic/change-password">Change your password</a></li>
+    </ul>
+    <a href="select-employee.html" class="link-back">Back</a>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        <span class="heading-secondary">Pensions Online - Rewind Employment</span>
+        Rewind employment
+      </h1>
+
+      <form action="" method="get" class="form">
+        <fieldset>
+          <legend class="visuallyhidden">Open employment</legend>
+
+          <div class="form-text">
+
+            <div class="form-group">
+              <label class="form-label" for="national-insurance-number">National Insurance number</label>
+              <p>QQ 12 34 56 C</p>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="sd-membership-number">SD Membership number</label>
+              <p>12345678</p>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="employee-id">Emp ID</label>
+              <p>1</p>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="ea-ref">EA reference</label>
+              <p>98765432</p>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="start-date">Start date</label>
+              <p>12 2 2001</p>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="rewind-employment">Rewind employment to</label>
+              <p class="form-hint">For example, 15 1 2005</p>
+              <div class="form-date">
+                <div class="form-group form-group-day">
+                  <label for="rewind-employment-day">Day</label> <input class="form-control" id="rewind-employment-day" max="31" min="0"
+                  name="rewind-employment-day" pattern="[0-9]*" type="number">
+                </div>
+                <div class="form-group form-group-month">
+                  <label for="rewind-employment-month">Month</label> <input class="form-control" id="rewind-employment-month" max="12" min="0"
+                  name="rewind-employment-month" pattern="[0-9]*" type="number">
+                </div>
+                <div class="form-group form-group-year">
+                  <label for="rewind-employment-year">Year</label> <input class="form-control" id="rewind-employment-year" max="2014" min="0"
+                  name="rewind-employment-year" pattern="[0-9]*" type="number">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="updated-reason">Updated reason</label>
+              <p>05 - Employment part has been cyclic updated</p>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="end-date">End date</label>
+              <p>31 3 2018</p>
+            </div>
+
+          </div>
+        </fieldset>
+
+        <!-- button link
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+        -->
+
+        <a href="confirm-rewind.html" role="button" class="button">Continue</a>
+
+      </form>
+
+      <hr />
+      <p><a href="#">Print this page</a></p>
+      <p><a href="/employer-services.html">Back to Employer Services home</a></p>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
