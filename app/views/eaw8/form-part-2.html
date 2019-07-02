@@ -1,0 +1,74 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  AW8 Part 2 - External AW8 - Pensions Online - NHSBSA
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="service-header">
+    <ul class="list">
+      <li><a class="log-out-link" id="logout-link" href="/employer-service/fic/logout">Sign out</a></li>
+      <li><a class="log-out-link" id="change-password-link" href="/employer-service/fic/change-password">Change your password</a></li>
+    </ul>
+    <a href="form-part-1.html" class="link-back">Back</a>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        <span class="heading-secondary">Pensions Online - AW8</span>
+        Part 2
+      </h1>
+
+      <form action="" method="get" class="form">
+        <fieldset>
+          <legend class="visuallyhidden">Part 2</legend>
+
+          <div class="form-text">
+
+            <div class="form-group">
+              <label class="form-label" for="employed-as">Employed as</label>
+              <input class="form-control" id="employed-as" name="employed-as" type="text">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="place-of-employment">Place of employment</label>
+              <input class="form-control" id="employed-as" name="employed-as" type="text">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="ea-code">EA Code number</label>
+              <p>4824</p>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="dob">Date of birth</label>
+              <p>TBC</p>
+            </div>
+
+          </div>
+        </fieldset>
+
+        <!-- button link
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+        -->
+
+        <a href="/e-forms-tiles.html" role="button" class="button">Continue</a>
+
+      </form>
+
+      <hr />
+      <p><a href="#">Print this page</a></p>
+      <p><a href="/employer-services.html">Back to Employer Services home</a></p>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
