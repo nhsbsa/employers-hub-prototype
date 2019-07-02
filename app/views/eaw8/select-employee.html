@@ -1,0 +1,94 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  Select Employee - External AW8 - Pensions Online - NHSBSA
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="service-header">
+    <ul class="list">
+      <li><a class="log-out-link" id="logout-link" href="/employer-service/fic/logout">Sign out</a></li>
+      <li><a class="log-out-link" id="change-password-link" href="/employer-service/fic/change-password">Change your password</a></li>
+    </ul>
+    <a href="/e-forms-tiles.html" class="link-back">Back</a>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        <span class="heading-secondary">Pensions Online - AW8</span>
+        Enter NI number or SD Membership number
+      </h1>
+
+      <h3 class="heading-medium">Before you complete this form, please ensure:</h3>
+      <ul class="list list-bullet">
+        <li>Members employment and personal details have been updated</li>
+        <li>Members date of birth has been verified on our records</li>
+        <li>Paper AW8 has been completed and declarations at part 10 and part 11 are complete</li>
+      </ul>
+
+      <form action="" method="get" class="form">
+        <fieldset>
+          <legend class="visuallyhidden">Enter NI number or SD Membership number</legend>
+
+          <div class="form-text">
+            <div class="form-group">
+              <label class="form-label" for="national-insurance-number">
+                National Insurance number
+              </label>
+              <p class="form-hint">It's on your National Insurance card, benefit letter, payslip or P60. <br />For example, 'QQ 12 34 56 C'</p>
+              <input class="form-control" id="national-insurance-number" name="national-insurance-number" type="text"
+              aria-describedby="national-insurance-number-hint" spellcheck="false">
+            </div>
+            <p>OR</p>
+            <div class="form-group">
+              <label class="form-label" for="sd-membership-number">
+                SD Membership number
+              </label>
+              <p class="form-hint">This is the eight digit number</p>
+              <input class="form-control" id="sd-membership-number" name="sd-membership-number" type="text"
+              aria-describedby="sd-membership-number-hint" spellcheck="false">
+            </div>
+
+            <div class="form-group">
+              <div class="multiple-choice">
+                <input id="checkbox-postcode" name="process-without-postcode" type="checkbox" value="true">
+                <label for="checkbox-postcode">
+                  Check this box to indicate you have the member's signature on the paper application form for retirement
+                  benefits (AW8) and Bank Details notification (G59) and that the G59 has been signed by a witness, other
+                  than the member's spouse
+                </label>
+              </div>
+            </div>
+
+          </div>
+        </fieldset>
+
+        <!-- button link
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+        -->
+
+
+        <h3 class="heading-medium">Please remember</h3>
+        <p>Once you have submitted the data online there is no need to send the paper form to NHSPA.
+        You should however retain this in case of future enquiries regarding the information you are about to submit.</p>
+
+        <a href="form.html" role="button" class="button">Continue</a>
+
+      </form>
+
+      <hr />
+      <p><a href="#">Print this page</a></p>
+      <p><a href="/employer-services.html">Back to Employer Services home</a></p>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
