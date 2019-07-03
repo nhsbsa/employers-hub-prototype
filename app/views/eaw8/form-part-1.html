@@ -1,0 +1,112 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  AW8 Part 1 - External AW8 - Pensions Online - NHSBSA
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="service-header">
+    <ul class="list">
+      <li><a class="log-out-link" id="logout-link" href="/employer-service/fic/logout">Sign out</a></li>
+      <li><a class="log-out-link" id="change-password-link" href="/employer-service/fic/change-password">Change your password</a></li>
+    </ul>
+    <a href="select-employee.html" class="link-back">Back</a>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        <span class="heading-secondary">Pensions Online - AW8</span>
+        Part 1
+      </h1>
+
+      <form action="" method="get" class="form">
+        <fieldset>
+          <legend class="visuallyhidden">Part 1</legend>
+
+          <h3 class="heading-medium">Name of member</h3>
+
+          <div class="form-text">
+
+            <div class="form-group">
+              <label class="form-label" for="title">Title</label>
+              <p>Mr</p>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="surname">Surname</label>
+              <p>Smith</p>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="firstnames">Firstname(s)</label>
+              <p>John</p>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="other-names">Other names</label>
+              <p></p>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="national-insurance-number">National Insurance number</label>
+              <p>QQ 12 34 56 C</p>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="pension-scheme-number">NHS Pension Scheme number</label>
+              <p>TBC</p>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="sex">Sex</label>
+              <p>Male</p>
+            </div>
+
+            <h3 class="heading-medium">Claiming retirement from</h3>
+            <div class="form-group">
+              <label class="form-label" for="retirement-from">Last day of employment, last day of scheme membership or 75<sup>th</sup>
+                birthday if earlier</label>
+              <p class="form-hint">Take account of any periods of leave due and undertaken at that date of retirement</p>
+              <div class="form-date">
+                <div class="form-group form-group-day">
+                  <label for="retirement-from-day">Day</label> <input class="form-control" id="retirement-from-day" max="31" min="0"
+                  name="retirement-from-day" pattern="[0-9]*" type="number">
+                </div>
+                <div class="form-group form-group-month">
+                  <label for="retirement-from-month">Month</label> <input class="form-control" id="retirement-from-month" max="12" min="0"
+                  name="retirement-from-month" pattern="[0-9]*" type="number">
+                </div>
+                <div class="form-group form-group-year">
+                  <label for="retirement-from-year">Year</label> <input class="form-control" id="retirement-from-year" max="2014" min="0"
+                  name="retirement-from-year" pattern="[0-9]*" type="number">
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </fieldset>
+
+        <!-- button link
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+        -->
+
+        <a href="form-part-2.html" role="button" class="button">Continue</a>
+
+      </form>
+
+      <hr />
+      <p><a href="#">Print this page</a></p>
+      <p><a href="/employer-services.html">Back to Employer Services home</a></p>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
