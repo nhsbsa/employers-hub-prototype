@@ -90,21 +90,55 @@
 
             <div class="form-group">
               <label class="form-label" for="scheme">Scheme</label>
-              <p>TBC</p>
+              <div class="multiple-choice">
+                <input id="checkbox-scheme" name="scheme" type="checkbox" value="true">
+                <label for="checkbox-scheme">1995</label>
+              </div>
             </div>
 
             <div class="form-group">
               <label class="form-label" for="payable-date">Payable date</label>
-              <p>TBC</p>
+              <p>10 2 2019</p>
             </div>
 
             <div class="form-group">
               <label class="form-label" for="retirement">Reason for retirement</label>
-              <p>TBC</p>
+              <select class="form-control" id="retirement">
+                <option>Select</option>
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+                <option>Option 4</option>
+                <option>Option 5</option>
+              </select>
             </div>
 
           </div>
         </fieldset>
+
+        <p>This calculation is partly based on information that has been constructed by NHS Pensions, as the relevant employer has
+        been unable to provide exact details. We have contacted the following employers to obtain this information, but without success: </p>
+        <div class="form-group">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Employer</th>
+                <th scope="col">Employer code</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>5432 - North Staffordshire Combined Healthcare NHS Trust</td>
+                <td>5432</td>
+              </tr>
+              <tr>
+                <td>6324 - NHS Stoke on Trent</td>
+                <td>6324</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>For further information please contact <a href="#">datamanagement@nhspa.gov.uk</a></p>
 
         <!-- button link
         <div class="form-group">
