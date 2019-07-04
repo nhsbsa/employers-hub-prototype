@@ -1,0 +1,107 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  AW8 Part 4 - External AW8 - Pensions Online - NHSBSA
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="service-header">
+    <ul class="list">
+      <li><a class="log-out-link" id="logout-link" href="/employer-service/fic/logout">Sign out</a></li>
+      <li><a class="log-out-link" id="change-password-link" href="/employer-service/fic/change-password">Change your password</a></li>
+    </ul>
+    <a href="form-part-3.html" class="link-back">Back</a>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        <span class="heading-secondary">Pensions Online - AW8</span>
+        Part 4
+      </h1>
+
+      <form action="" method="get" class="form">
+        <fieldset>
+          <legend class="visuallyhidden">Part 4</legend>
+
+          <div class="form-text">
+
+            <div class="form-group">
+              <label class="form-label" for="frequency">(B) Has the Specialist been entitled to the percentage increase in
+              pensionable pay set out in the Terms and Conditions of Service for Hospital Medical and Dental Staff for their part
+            time service?</label>
+              <div class="inline">
+                <div class="multiple-choice">
+                  <input id="dob-verified-1" type="radio" name="dob-verified-group" value="Yes">
+                  <label for="dob-verified-1">Yes</label>
+                </div>
+                <div class="multiple-choice">
+                  <input id="dob-verified-2" type="radio" name="dob-verified-group" value="No">
+                  <label for="dob-verified-2">No</label>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="heading-medium">For all Part Time members</h3>
+            <p>Please give the Notional Whole Time pensionable pay fo reach of the last 3 years, or lesser period if applicable.
+            This figure should be the pensionable pay that would have been paid in a single comparable with whole time employment</p>
+
+            <div class="form-group">
+              <table>
+                <thead>
+                  <tr>
+                    <th scope="col">Year</th>
+                    <th scope="col">From</th>
+                    <th scope="col">To</th>
+                    <th scope="col">Amount</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Last</td>
+                    <td>10 2 2018</td>
+                    <td>9 2 2019</td>
+                    <td>&pound; <input class="form-control" id="amount-1" name="amount-1" type="text"></td>
+                  </tr>
+                  <tr>
+                    <td>Middle</td>
+                    <td>10 2 2017</td>
+                    <td>9 2 2018</td>
+                    <td>&pound; <input class="form-control" id="amount-1" name="amount-1" type="text"></td>
+                  </tr>
+                  <tr>
+                    <td>Earliest</td>
+                    <td>10 2 2016</td>
+                    <td>9 2 2017</td>
+                    <td>&pound; <input class="form-control" id="amount-1" name="amount-1" type="text"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+        </fieldset>
+
+        <!-- button link
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+        -->
+
+        <a href="form-part-5.html" role="button" class="button">Continue</a>
+
+      </form>
+
+      <hr />
+      <p><a href="#">Print this page</a></p>
+      <p><a href="/employer-services.html">Back to Employer Services home</a></p>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
