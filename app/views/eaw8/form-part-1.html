@@ -98,7 +98,21 @@
 
             <div class="form-group">
               <label class="form-label" for="payable-date">Payable date</label>
-              <p>10 2 2019</p>
+              <p class="form-hint">For example, TBC</p>
+              <div class="form-date">
+                <div class="form-group form-group-day">
+                  <label for="payable-date-day">Day</label> <input class="form-control" id="payable-date-day" max="31" min="0"
+                  name="payable-date-day" pattern="[0-9]*" type="number">
+                </div>
+                <div class="form-group form-group-month">
+                  <label for="payable-date-month">Month</label> <input class="form-control" id="payable-date-month" max="12" min="0"
+                  name="payable-date-month" pattern="[0-9]*" type="number">
+                </div>
+                <div class="form-group form-group-year">
+                  <label for="payable-date-year">Year</label> <input class="form-control" id="payable-date-year" max="2014" min="0"
+                  name="payable-date-year" pattern="[0-9]*" type="number">
+                </div>
+              </div>
             </div>
 
             <div class="form-group">
