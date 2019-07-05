@@ -1,0 +1,153 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  AW8 Part 5 - External AW8 - Pensions Online - NHSBSA
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="service-header">
+    <ul class="list">
+      <li><a class="log-out-link" id="logout-link" href="/employer-service/fic/logout">Sign out</a></li>
+      <li><a class="log-out-link" id="change-password-link" href="/employer-service/fic/change-password">Change your password</a></li>
+    </ul>
+    <a href="form-part-4.html" class="link-back">Back</a>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        <span class="heading-secondary">Pensions Online - AW8</span>
+        Part 5
+      </h1>
+
+      <form action="" method="get" class="form">
+        <fieldset>
+          <legend class="visuallyhidden">Part 5</legend>
+
+          <div class="form-text">
+
+            <div class="form-group">
+              <label class="form-label" for="classification">(A) Classification</label>
+              <select class="form-control" id="classification">
+                <option>Select</option>
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+                <option>04</option>
+                <option>05</option>
+                <option>08</option>
+                <option>10</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="classification">(B) Reason for retirement</label>
+              <p class="form-hint">Tick the appropriate box. If 2 or more reasons apply, tick the highest</p>
+              <div class="multiple-choice">
+                <input id="classification-1" type="checkbox" name="classification-group" value="Whole time">
+                <label for="classification-1">1. Competitive tendering - Premature retirement</label>
+              </div>
+              <div class="multiple-choice">
+                <input id="classification-2" type="checkbox" name="classification-group" value="Option 2">
+                <label for="classification-2">TBC</label>
+              </div>
+              <div class="multiple-choice">
+                <input id="classification-3" type="checkbox" name="classification-group" value="Option 3">
+                <label for="classification-3">TBC</label>
+              </div>
+              <div class="multiple-choice">
+                <input id="classification-4" type="checkbox" name="classification-group" value="Option 4">
+                <label for="classification-4">TBC</label>
+              </div>
+              <div class="multiple-choice">
+                <input id="classification-5" type="checkbox" name="classification-group" value="Option 5">
+                <label for="classification-5">TBC</label>
+              </div>
+              <div class="multiple-choice">
+                <input id="classification-6" type="checkbox" name="classification-group" value="Option 6">
+                <label for="classification-6">TBC</label>
+              </div>
+            </div>
+
+            <h3 class="heading-medium">(C) Redundancy payments by EA</h3>
+
+            <div class="form-group">
+              <label class="form-label" for="ea-responsible">(a) EA responsible for any compensation charges</label>
+              <input class="form-control" id="ea-responsible" type="text">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="ea-code">EA Code</label>
+              <input class="form-control" id="ea-code" type="text">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="gross-amount">(c) Gross amount of redundancy payment due, prior to any reduction</label>
+              <p class="form-hint">See Pt. 15, Para 7 of the EA Guide</p>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="gross-whitley">Gross Whitley R.P</label>
+              &pound; <input class="form-control" id="gross-whitley" type="text">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="other-payments">Any other payments</label>
+              &pound; <input class="form-control" id="other-payments" type="text">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="tax-code">(d) Tax code from P45</label>
+              <input class="form-control" id="tax-code" type="text">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="tax-paid">Enter tax paid on both amounts at (c) above</label>
+              &pound; <input class="form-control" id="tax-paid" type="text">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="redundancy">(e) Have you made a redundancy payment?</label>
+              <div class="inline">
+                <div class="multiple-choice" data-target="redundancy-yes">
+                  <input id="redundancy-1" type="radio" name="redundancy-group" value="Yes">
+                  <label for="redundancy-1">Yes</label>
+                </div>
+                <div class="panel panel-border-narrow js-hidden" id="redundancy-yes">
+                  <label class="form-label" for="amount">Enter amount</label>
+                  <input class="form-control" id="amount" name="amount" type="text">
+                </div>
+                <div class="multiple-choice">
+                  <input id="redundancy-2" type="radio" name="redundancy-group" value="No">
+                  <label for="redundancy-2">No</label>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </fieldset>
+
+        <!-- button link
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+        -->
+
+        <a href="form-part-6.html" role="button" class="button">Continue</a>
+
+      </form>
+
+      <hr />
+      <p><a href="#">Print this page</a></p>
+      <p><a href="/employer-services.html">Back to Employer Services home</a></p>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
