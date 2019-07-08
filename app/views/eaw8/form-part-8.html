@@ -1,0 +1,162 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  AW8 Part 8 - External AW8 - Pensions Online - NHSBSA
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="service-header">
+    <ul class="list">
+      <li><a class="log-out-link" id="logout-link" href="/employer-service/fic/logout">Sign out</a></li>
+      <li><a class="log-out-link" id="change-password-link" href="/employer-service/fic/change-password">Change your password</a></li>
+    </ul>
+    <a href="form-part-7.html" class="link-back">Back</a>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        <span class="heading-secondary">Pensions Online - AW8</span>
+        Part 8 - HM Revenue and Customs (HMRC) information screen
+      </h1>
+
+      <form action="" method="get" class="form">
+        <fieldset>
+          <legend class="visuallyhidden">Part 8 - HM Revenue and Customs (HMRC) information screen</legend>
+
+          <div class="form-text">
+
+            <div class="form-group">
+              <label class="form-label" for="retirement-arrangements">1. Are there any retirement arrangements outise the NHS Pension Scheme?</label>
+              <div class="inline">
+                <div class="multiple-choice">
+                  <input id="retirement-arrangements-1" type="radio" name="retirement-arrangements-group" value="Yes">
+                  <label for="retirement-arrangements-1">Yes</label>
+                </div>
+                <div class="multiple-choice">
+                  <input id="retirement-arrangements-2" type="radio" name="retirement-arrangements-group" value="No">
+                  <label for="retirement-arrangements-2">No</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="annual-pension">2. Will the annual pension from all pension arrangements, including
+                the NHS Pension Scheme be more than &pound;30,000 a year?</label>
+              <div class="inline">
+                <div class="multiple-choice">
+                  <input id="annual-pension-1" type="radio" name="annual-pension-group" value="Yes">
+                  <label for="annual-pension-1">Yes</label>
+                </div>
+                <div class="multiple-choice">
+                  <input id="annual-pension-2" type="radio" name="annual-pension-group" value="No">
+                  <label for="annual-pension-2">No</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="pensions-benefits">3. Pension benefits taken on or after 6 April 2006?</label>
+              <div class="inline">
+                <div class="multiple-choice">
+                  <input id="pensions-benefits-1" type="radio" name="pensions-benefits-group" value="Yes">
+                  <label for="pensions-benefits-1">Yes</label>
+                </div>
+                <div class="multiple-choice">
+                  <input id="pensions-benefits-2" type="radio" name="pensions-benefits-group" value="No">
+                  <label for="pensions-benefits-2">No</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="total-aggregated">3(i) Total aggregated % of LTA used</label>
+              <input class="form-control" id="total-aggregated" type="text"> &#37;
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="crystallisation">3(ii) Date of first Benefit Crystallisation Event</label>
+              <p class="form-hint">For example, TBC</p>
+              <div class="form-date">
+                <div class="form-group form-group-day">
+                  <label for="crystallisation-date-day">Day</label> <input class="form-control" id="crystallisation-date-day" max="31" min="0"
+                  name="crystallisation-date-day" pattern="[0-9]*" type="number">
+                </div>
+                <div class="form-group form-group-month">
+                  <label for="crystallisation-date-month">Month</label> <input class="form-control" id="crystallisation-date-month" max="12" min="0"
+                  name="crystallisation-date-month" pattern="[0-9]*" type="number">
+                </div>
+                <div class="form-group form-group-year">
+                  <label for="crystallisation-date-year">Year</label> <input class="form-control" id="crystallisation-date-year" max="2014" min="0"
+                  name="crystallisation-date-year" pattern="[0-9]*" type="number">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="pension-benefits-before">4. Pension benefits taken before 6 April 2006?</label>
+              <div class="inline">
+                <div class="multiple-choice">
+                  <input id="pension-benefits-before-1" type="radio" name="pension-benefits-before-group" value="Yes">
+                  <label for="pension-benefits-before-1">Yes</label>
+                </div>
+                <div class="multiple-choice">
+                  <input id="pension-benefits-before-2" type="radio" name="pension-benefits-before-group" value="No">
+                  <label for="pension-benefits-before-2">No</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="gross-pension">4(i) Gross annual pension in payment today or at date of first BCE</label>
+              &pound; <input class="form-control" id="gross-pension" type="text">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="lta">5. Should NHS Pension Scheme benefits be treated as entirely in excess of the LTA?</label>
+              <div class="inline">
+                <div class="multiple-choice">
+                  <input id="lta-1" type="radio" name="lta-group" value="Yes">
+                  <label for="lta-1">Yes</label>
+                </div>
+                <div class="multiple-choice">
+                  <input id="lta-2" type="radio" name="lta-group" value="No">
+                  <label for="lta-2">No</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="ea-responsible">Certificate number for valid "Certificate for enhanced primary fixed
+                (2012, 2014 or 2016) or individual protection (2014 or 2016)" from HMRC</label>
+              <p class="form-hint">If the member has more than one form of protection enter at least one certificate number.
+              Where the protection type is prior to 2016, please remember to send a copy of the certificate to NHS Pensions</p>
+              <input class="form-control" id="ea-responsible" type="text">
+            </div>
+
+          </div>
+        </fieldset>
+
+        <!-- button link
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+        -->
+
+        <a href="form-part-9.html" role="button" class="button">Continue</a>
+
+      </form>
+
+      <hr />
+      <p><a href="#">Print this page</a></p>
+      <p><a href="/employer-services.html">Back to Employer Services home</a></p>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

@@ -1,0 +1,288 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  AW8 Part 7 - External AW8 - Pensions Online - NHSBSA
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="service-header">
+    <ul class="list">
+      <li><a class="log-out-link" id="logout-link" href="/employer-service/fic/logout">Sign out</a></li>
+      <li><a class="log-out-link" id="change-password-link" href="/employer-service/fic/change-password">Change your password</a></li>
+    </ul>
+    <a href="form-part-6.html" class="link-back">Back</a>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        <span class="heading-secondary">Pensions Online - AW8</span>
+        Part 7
+      </h1>
+
+      <form action="" method="get" class="form">
+        <fieldset>
+          <legend class="visuallyhidden">Part 7</legend>
+
+          <div class="form-text">
+
+            <h3 class="heading-medium">Please tell us:</h3>
+            <div class="form-group">
+              <label class="form-label" for="marriage-date">The date of your marriage / civil partnership</label>
+              <p class="form-hint">For example, TBC</p>
+              <div class="form-date">
+                <div class="form-group form-group-day">
+                  <label for="marriage-date-day">Day</label> <input class="form-control" id="marriage-date-day" max="31" min="0"
+                  name="marriage-date-day" pattern="[0-9]*" type="number">
+                </div>
+                <div class="form-group form-group-month">
+                  <label for="marriage-date-month">Month</label> <input class="form-control" id="marriage-date-month" max="12" min="0"
+                  name="marriage-date-month" pattern="[0-9]*" type="number">
+                </div>
+                <div class="form-group form-group-year">
+                  <label for="marriage-date-year">Year</label> <input class="form-control" id="marriage-date-year" max="2014" min="0"
+                  name="marriage-date-year" pattern="[0-9]*" type="number">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="marriage-verified">Have details of marriage / civil partnership been verified by sight of the certificate?</label>
+              <div class="inline">
+                <div class="multiple-choice">
+                  <input id="marriage-verified-1" type="radio" name="marriage-verified-group" value="Yes">
+                  <label for="marriage-verified-1">Yes</label>
+                </div>
+                <div class="multiple-choice">
+                  <input id="marriage-verified-2" type="radio" name="marriage-verified-group" value="No">
+                  <label for="marriage-verified-2">No</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="partners-dob">Your spouse / civil partner's date of birth</label>
+              <div class="form-date">
+                <div class="form-group form-group-day">
+                  <label for="partners-dob-date-day">Day</label> <input class="form-control" id="partners-dob-date-day" max="31" min="0"
+                  name="partners-dob-date-day" pattern="[0-9]*" type="number">
+                </div>
+                <div class="form-group form-group-month">
+                  <label for="partners-dob-date-month">Month</label> <input class="form-control" id="partners-dob-date-month" max="12" min="0"
+                  name="partners-dob-date-month" pattern="[0-9]*" type="number">
+                </div>
+                <div class="form-group form-group-year">
+                  <label for="partners-dob-date-year">Year</label> <input class="form-control" id="partners-dob-date-year" max="2014" min="0"
+                  name="partners-dob-date-year" pattern="[0-9]*" type="number">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="partners-dob-verified">Has the spouse / civil partner's date of birth been verified by sight of the birth certificate?</label>
+              <div class="inline">
+                <div class="multiple-choice">
+                  <input id="partners-dob-verified-1" type="radio" name="partners-dob-verified-group" value="Yes">
+                  <label for="partners-dob-verified-1">Yes</label>
+                </div>
+                <div class="multiple-choice">
+                  <input id="partners-dob-verified-2" type="radio" name="partners-dob-verified-group" value="No">
+                  <label for="partners-dob-verified-2">No</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="partners-first-name">Your spouse / civil partner's first name</label>
+              <input class="form-control" id="partners-first-name" type="text">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="partners-surname">Your spouse / civil partner's surname</label>
+              <input class="form-control" id="partners-surname" type="text">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="partners-ni">Your spouse / civil partner's National Insurance number</label>
+              <input class="form-control" id="partners-ni" type="text">
+            </div>
+
+            <h3 class="heading-medium">Please enter census data</h3>
+            <div class="form-group">
+              <label class="form-label" for="disability">Disability</label>
+              <select class="form-control" id="disability">
+                <option>Select</option>
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+                <option>Option 4</option>
+                <option>Option 5</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="religion">Religion / Belief</label>
+              <select class="form-control" id="religion">
+                <option>Select</option>
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+                <option>Option 4</option>
+                <option>Option 5</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="sexual-orientation">Sexual orientation</label>
+              <select class="form-control" id="sexual-orientation">
+                <option>Select</option>
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+                <option>Option 4</option>
+                <option>Option 5</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="ethnicity-code">Ethnicity code</label>
+              <input class="form-control" id="ethnicity-code" type="text">
+            </div>
+
+            <h3 class="heading-medium">Dependent children (1 of 2)</h3>
+            <div class="form-group">
+              <label class="form-label" for="surname">Surname</label>
+              <input class="form-control" id="surname" type="text">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="first-name">First name</label>
+              <input class="form-control" id="first-name" type="text">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="sex">Sex</label>
+              <div class="inline">
+                <div class="multiple-choice">
+                  <input id="sex-1" type="radio" name="sex-group" value="Female">
+                  <label for="sex-1">Female</label>
+                </div>
+                <div class="multiple-choice">
+                  <input id="sex-2" type="radio" name="sex-group" value="Male">
+                  <label for="sex-2">Male</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="child1-dob">Date of birth</label>
+              <div class="form-date">
+                <div class="form-group form-group-day">
+                  <label for="child1-dob-date-day">Day</label> <input class="form-control" id="child1-dob-date-day" max="31" min="0"
+                  name="child1-dob-date-day" pattern="[0-9]*" type="number">
+                </div>
+                <div class="form-group form-group-month">
+                  <label for="child1-dob-date-month">Month</label> <input class="form-control" id="child1-dob-date-month" max="12" min="0"
+                  name="child1-dob-date-month" pattern="[0-9]*" type="number">
+                </div>
+                <div class="form-group form-group-year">
+                  <label for="child1-dob-date-year">Year</label> <input class="form-control" id="child1-dob-date-year" max="2014" min="0"
+                  name="child1-dob-date-year" pattern="[0-9]*" type="number">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="verified">Verified?</label>
+              <div class="inline">
+                <div class="multiple-choice">
+                  <input id="verified-1" type="radio" name="verified-group" value="Yes">
+                  <label for="verified-1">Yes</label>
+                </div>
+                <div class="multiple-choice">
+                  <input id="verified-2" type="radio" name="verified-group" value="No">
+                  <label for="verified-2">No</label>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="heading-medium">Dependent children (2 of 2)</h3>
+            <div class="form-group">
+              <label class="form-label" for="surname2">Surname</label>
+              <input class="form-control" id="surname2" type="text">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="first-name2">First name</label>
+              <input class="form-control" id="first-name2" type="text">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="sex2">Sex</label>
+              <div class="inline">
+                <div class="multiple-choice">
+                  <input id="sex2-" type="radio" name="sex2-group" value="Female">
+                  <label for="sex2-1">Female</label>
+                </div>
+                <div class="multiple-choice">
+                  <input id="sex2-2" type="radio" name="sex2-group" value="Male">
+                  <label for="sex2-2">Male</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="child2-dob">Date of birth</label>
+              <div class="form-date">
+                <div class="form-group form-group-day">
+                  <label for="child2-dob-date-day">Day</label> <input class="form-control" id="child2-dob-date-day" max="31" min="0"
+                  name="child2-dob-date-day" pattern="[0-9]*" type="number">
+                </div>
+                <div class="form-group form-group-month">
+                  <label for="child2-dob-date-month">Month</label> <input class="form-control" id="child2-dob-date-month" max="12" min="0"
+                  name="child2-dob-date-month" pattern="[0-9]*" type="number">
+                </div>
+                <div class="form-group form-group-year">
+                  <label for="child2-dob-date-year">Year</label> <input class="form-control" id="child2-dob-date-year" max="2014" min="0"
+                  name="child2-dob-date-year" pattern="[0-9]*" type="number">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="verified2">Verified?</label>
+              <div class="inline">
+                <div class="multiple-choice">
+                  <input id="verified2-1" type="radio" name="verified2-group" value="Yes">
+                  <label for="verified2-1">Yes</label>
+                </div>
+                <div class="multiple-choice">
+                  <input id="verified2-2" type="radio" name="verified2-group" value="No">
+                  <label for="verified2-2">No</label>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </fieldset>
+
+        <!-- button link
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+        -->
+
+        <a href="form-part-8.html" role="button" class="button">Continue</a>
+
+      </form>
+
+      <hr />
+      <p><a href="#">Print this page</a></p>
+      <p><a href="/employer-services.html">Back to Employer Services home</a></p>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
