@@ -1,0 +1,93 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  AW8 Bank details confirm - External AW8 - Pensions Online - NHSBSA
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="service-header">
+    <ul class="list">
+      <li><a class="log-out-link" id="logout-link" href="/employer-service/fic/logout">Sign out</a></li>
+      <li><a class="log-out-link" id="change-password-link" href="/employer-service/fic/change-password">Change your password</a></li>
+    </ul>
+    <a href="form-part-9.html" class="link-back">Back</a>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        <span class="heading-secondary">Pensions Online - AW8</span>
+        Please confirm account details
+      </h1>
+
+      <form action="" method="get" class="form">
+        <fieldset>
+          <legend class="visuallyhidden">Please confirm account details</legend>
+
+          <div class="form-text">
+
+            <div class="form-group">
+              <label class="form-label" for="bank-name">Name of bank / building society</label>
+              <input class="form-control" id="bank-name" type="text">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="account-type">Type of account</label>
+              <div class="multiple-choice">
+                <input id="account-type-1" type="radio" name="account-type-group" value="Current">
+                <label for="account-type-1">Current</label>
+              </div>
+              <div class="multiple-choice">
+                <input id="account-type-2" type="radio" name="account-type-group" value="TBC">
+                <label for="account-type-2">TBC</label>
+              </div>
+              <div class="multiple-choice">
+                <input id="account-type-3" type="radio" name="account-type-group" value="TBC">
+                <label for="account-type-3">TBC</label>
+              </div>
+              <div class="multiple-choice">
+                <input id="account-type-4" type="radio" name="account-type-group" value="TBC">
+                <label for="account-type-4">TBC</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="branch-sort-code">Branch sort code</label>
+              <input class="form-control" id="branch-sort-code" type="text">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="account-number">Account number</label>
+              <input class="form-control" id="account-number" type="text">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="roll-number">Roll number</label>
+              <input class="form-control" id="roll-number" type="text">
+            </div>
+
+          </div>
+        </fieldset>
+
+        <!-- button link
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+        -->
+
+        <a href="overview.html" role="button" class="button">Continue</a>
+
+      </form>
+
+      <hr />
+      <p><a href="#">Print this page</a></p>
+      <p><a href="/employer-services.html">Back to Employer Services home</a></p>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

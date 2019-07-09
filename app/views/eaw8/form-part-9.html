@@ -1,0 +1,214 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  AW8 Part 9 - External AW8 - Pensions Online - NHSBSA
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="service-header">
+    <ul class="list">
+      <li><a class="log-out-link" id="logout-link" href="/employer-service/fic/logout">Sign out</a></li>
+      <li><a class="log-out-link" id="change-password-link" href="/employer-service/fic/change-password">Change your password</a></li>
+    </ul>
+    <a href="form-part-8.html" class="link-back">Back</a>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        <span class="heading-secondary">Pensions Online - AW8</span>
+        Part 9
+      </h1>
+
+      <form action="" method="get" class="form">
+        <fieldset>
+          <legend class="visuallyhidden">Part 9</legend>
+
+          <div class="form-text">
+
+            <div class="form-group">
+              <label class="form-label" for="insurance-policy">Have you ever been a member of an Insurance Policy based pension scheme?</label>
+              <div class="inline">
+                <div class="multiple-choice">
+                  <input id="insurance-policy-1" type="radio" name="insurance-policy-group" value="Yes">
+                  <label for="insurance-policy-1">Yes</label>
+                </div>
+                <div class="multiple-choice">
+                  <input id="insurance-policy-2" type="radio" name="insurance-policy-group" value="No">
+                  <label for="insurance-policy-2">No</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="address">Address</label>
+              <label class="form-label" for="address-line-1"><span class="visuallyhidden">Building and street line 1 of 3</span></label>
+              <input class="form-control" id="address-line-1" type="text">
+              <label class="form-label" for="address-line-2"><span class="visuallyhidden">Building and street line 2 of 3</span></label>
+              <input class="form-control" id="address-line-2" type="text">
+              <label class="form-label" for="address-line-3"><span class="visuallyhidden">Building and street line 3 of 3</span></label>
+              <input class="form-control" id="address-line-3" type="text">
+              <label class="form-label" for="address-line-4"><span class="visuallyhidden">Town or city</span></label>
+              <input class="form-control" id="address-line-4" type="text">
+              <label class="form-label" for="address-postcode">Postcode</label>
+              <input class="form-control" id="address-postcode" type="text">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="foreign-address">Is address foreign?</label>
+              <div class="inline">
+                <div class="multiple-choice">
+                  <input id="foreign-address-1" type="radio" name="foreign-address-group" value="Yes">
+                  <label for="foreign-address-1">Yes</label>
+                </div>
+                <div class="multiple-choice">
+                  <input id="foreign-address-2" type="radio" name="foreign-address-group" value="No">
+                  <label for="foreign-address-2">No</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="iso-code">ISO Country Code</label>
+              <input class="form-control" id="iso-code" type="text">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="change-date">
+                Date of the change
+              </label>
+              <p class="form-hint">For example, TBC</p>
+              <div class="form-date">
+                <div class="form-group form-group-day">
+                  <label for="change-date-day">Day</label> <input class="form-control" id="change-date-day" max="31" min="0"
+                  name="change-date-day" pattern="[0-9]*" type="number">
+                </div>
+                <div class="form-group form-group-month">
+                  <label for="change-date-month">Month</label> <input class="form-control" id="change-date-month" max="12" min="0"
+                  name="change-date-month" pattern="[0-9]*" type="number">
+                </div>
+                <div class="form-group form-group-year">
+                  <label for="change-date-year">Year</label> <input class="form-control" id="change-date-year" max="2014" min="0"
+                  name="change-date-year" pattern="[0-9]*" type="number">
+                </div>
+              </div>
+            </div>
+
+            <h3 class="heading-medium">Bank or building society account details</h3>
+            <div class="form-group">
+              <label class="form-label" for="account-type">Type of account</label>
+              <p class="form-hint">If none select voucher</p>
+              <select class="form-control" id="account-type">
+                <option>Select</option>
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+                <option>04</option>
+                <option>05</option>
+                <option>08</option>
+                <option>10</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="branch-sort-code">Branch sort code</label>
+              <p class="form-hint">This is the six figure number that is usually in the top right hand corner of your cheque</p>
+              <input class="form-control" id="branch-sort-code" type="text">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="account-number">Account number</label>
+              <input class="form-control" id="account-number" type="text">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="roll-number">Roll number</label>
+              <input class="form-control" id="roll-number" type="text">
+            </div>
+
+            <h3 class="heading-medium">Full name and address of your bank / building society</h3>
+            <div class="form-group">
+              <label class="form-label" for="bank-name">Name of bank or building society</label>
+              <input class="form-control" id="bank-name" type="text">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="address">Address</label>
+              <label class="form-label" for="address-line-1"><span class="visuallyhidden">Building and street line 1 of 2</span></label>
+              <input class="form-control" id="address-line-1" type="text">
+              <label class="form-label" for="address-line-2"><span class="visuallyhidden">Building and street line 2 of 2</span></label>
+              <input class="form-control" id="address-line-2" type="text">
+              <label class="form-label" for="address-line-4"><span class="visuallyhidden">Town or city</span></label>
+              <input class="form-control" id="address-line-4" type="text">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="employment-type">Account type</label>
+              <div class="multiple-choice">
+                <input id="account-type-1" type="radio" name="account-type-group" value="Current">
+                <label for="account-type-1">Current</label>
+              </div>
+              <div class="multiple-choice">
+                <input id="account-type-2" type="radio" name="account-type-group" value="TBC">
+                <label for="account-type-2">TBC</label>
+              </div>
+              <div class="multiple-choice">
+                <input id="account-type-3" type="radio" name="account-type-group" value="TBC">
+                <label for="account-type-3">TBC</label>
+              </div>
+              <div class="multiple-choice">
+                <input id="account-type-4" type="radio" name="account-type-group" value="TBC">
+                <label for="account-type-4">TBC</label>
+              </div>
+            </div>
+
+            <h3 class="heading-medium">Other pensions</h3>
+            <div class="form-group">
+              <label class="form-label" for="paymaster-details">If you have any other pensions paid by PAYMASTER please give details</label>
+              <textarea class="form-control" id="paymaster-details" rows="4" cols="50" style="width: 100%;"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="paymaster-ref">PAYMASTER reference number of any other pension</label>
+              <input class="form-control" id="paymaster-ref" type="text">
+            </div>
+
+            <h3 class="heading-medium">Voluntary deductions?</h3>
+            <div class="form-group">
+              <div class="inline">
+                <div class="multiple-choice">
+                  <input id="voluntary-deductions-1" type="radio" name="voluntary-deductions-group" value="Yes">
+                  <label for="voluntary-deductions-1">Yes</label>
+                </div>
+                <div class="multiple-choice">
+                  <input id="voluntary-deductions-2" type="radio" name="voluntary-deductions-group" value="No">
+                  <label for="voluntary-deductions-2">No</label>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </fieldset>
+
+        <!-- button link
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+        -->
+
+        <a href="confirm-account.html" role="button" class="button">Continue</a>
+
+      </form>
+
+      <hr />
+      <p><a href="#">Print this page</a></p>
+      <p><a href="/employer-services.html">Back to Employer Services home</a></p>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
