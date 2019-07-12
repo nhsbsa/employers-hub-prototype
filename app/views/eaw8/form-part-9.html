@@ -54,8 +54,6 @@
               <input class="form-control" id="address-line-3" type="text">
               <label class="form-label" for="address-line-4"><span class="visuallyhidden">Town or city</span></label>
               <input class="form-control" id="address-line-4" type="text">
-              <label class="form-label" for="address-postcode">Postcode</label>
-              <input class="form-control" id="address-postcode" type="text">
             </div>
 
             <div class="form-group">
@@ -70,6 +68,11 @@
                   <label for="foreign-address-2">No</label>
                 </div>
               </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="address-postcode">Postcode</label>
+              <input class="form-control" id="address-postcode" type="text">
             </div>
 
             <div class="form-group">
@@ -147,22 +150,16 @@
 
             <div class="form-group">
               <label class="form-label" for="employment-type">Account type</label>
-              <div class="multiple-choice">
-                <input id="account-type-1" type="radio" name="account-type-group" value="Current">
-                <label for="account-type-1">Current</label>
-              </div>
-              <div class="multiple-choice">
-                <input id="account-type-2" type="radio" name="account-type-group" value="TBC">
-                <label for="account-type-2">TBC</label>
-              </div>
-              <div class="multiple-choice">
-                <input id="account-type-3" type="radio" name="account-type-group" value="TBC">
-                <label for="account-type-3">TBC</label>
-              </div>
-              <div class="multiple-choice">
-                <input id="account-type-4" type="radio" name="account-type-group" value="TBC">
-                <label for="account-type-4">TBC</label>
-              </div>
+                <div class="inline">
+                  <div class="multiple-choice">
+                    <input id="account-type-1" type="radio" name="account-type-group" value="Current">
+                    <label for="account-type-1">Current</label>
+                  </div>
+                  <div class="multiple-choice">
+                    <input id="account-type-2" type="radio" name="account-type-group" value="Deposit">
+                    <label for="account-type-2">Deposit</label>
+                  </div>
+                </div>
             </div>
 
             <h3 class="heading-medium">Other pensions</h3>
