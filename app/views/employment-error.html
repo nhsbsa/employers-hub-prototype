@@ -7,9 +7,17 @@
 {% block content %}
 
 <main id="content" role="main">
+
+  <div class="service-header">
+    <ul class="list">
+      <li><a class="log-out-link" id="logout-link" href="/employer-service/fic/logout">Sign out</a></li>
+      <li><a class="log-out-link" id="change-password-link" href="/employer-service/fic/change-password">Change your password</a></li>
+    </ul>
+    <a href="employment.html" class="link-back">Back</a>
+  </div>
+
   <div class="grid-row">
     <div class="column-two-thirds">
-      <a href="employment.html" class="link-back">Back</a>
 
       <h1 class="heading-xlarge">
         <span class="heading-secondary">Pensions Online</span>
@@ -28,7 +36,7 @@
               <li><a href="#employment-2">This record has already been cyclic updated to 31/03/2018. The date of termination
                 you have entered is equal to or before this date. If this is correct please rewind this employment using the
                 "Rewind Employment" form and then resubmit the termination form. If the date of termination you have entered
-                is incorrect please click “Back” and re-enter the correct date.</a></li>
+                is incorrect please click "Back" and re-enter the correct date</a></li>
             </ul>
           </div>
 
@@ -50,17 +58,17 @@
                   <span class="visuallyhidden">Error:</span> Check information
                 </span>
                 <input id="employment-2" type="radio" name="radio-group" value="s012-another">
-                <label for="employment-2">S012 - Another Job
+                <label for="employment-2">S746 - Norewood Surgery
                   <span id="employment-1-item-hint" class="form-hint">
-                    ID: 2 - EA Code: S012 - Start date: 11-11-2018 - Status: Full-time - Years to update: 1
+                    ID: 2 - EA Code: S746 - Start date: 11-11-2018 - Status: Full-time - Years to update: 1
                   </span>
                 </label>
               </div>
               <div class="multiple-choice">
                 <input id="employment-3" type="radio" name="radio-group" value="s234-yet-another">
-                <label for="employment-3">S345 - Yet Another Job
+                <label for="employment-3">S746 - Norewood Surgery
                   <span id="employment-1-item-hint" class="form-hint">
-                    ID: 7 - EA Code: S345 - Start date: 30-1-1978 - Status: Closed
+                    ID: 7 - EA Code: S746 - Start date: 30-1-1978 - Status: Closed
                   </span>
                 </label>
               </div>
@@ -82,6 +90,10 @@
         <a href="#" role="button" class="button">Continue</a>
 
       </form>
+
+      <hr />
+      <p><a href="#">Print this page</a></p>
+      <p><a href="/employer-services.html">Back to Employer Services home</a></p>
 
     </div>
   </div>
