@@ -1,0 +1,63 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  Select error - Error handling - Pensions Online - NHSBSA
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="service-header">
+    <ul class="list">
+      <li><a class="log-out-link" id="logout-link" href="/employer-service/fic/logout">Sign out</a></li>
+      <li><a class="log-out-link" id="change-password-link" href="/employer-service/fic/change-password">Change your password</a></li>
+    </ul>
+    <a href="/e-forms-tiles.html" class="link-back">Back</a>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        <span class="heading-secondary">Pensions Online</span>
+        Error handling
+      </h1>
+
+      <h3 class="heading-medium">Error handling statistics as of 15 Jan 2019 05:20:38</h3>
+      <p>Total number of errors allocated to you yesterday <br />0</p>
+      <p>Total number of errors allocated to you <br /><a href="#">44</a></p>
+      <p>Errors allocated to NHS Pensions <br /><a href="#">120</a></p>
+
+      <h3 class="heading-medium">TBC</h3>
+      <ul class="list">
+        <li><a href="#">Employer Allocated Errors</a></li>
+        <li><a href="#">Errors Allocated to NHS Pensions</a></li>
+      </ul>
+
+      <h3 class="heading-medium">TBC</h3>
+      <p>As notified in TN 2/2013 NHS Pensions are no longer processing any employment data with missing mandatory or conditional information.</p>
+      <p>Previously default values would have been entered in these fields and you would be issued with an Auto SD55e requesting the correct information.
+      Auto SD55E's will no longer be issued and the appropriate error will now be sent to Error Handling for you to enter the correct information
+      and reprocess the form. </p>
+      <p>Instructions on how to resolve these errors is held behind the &lt; TBC &gt; in the normal way. The full Error Handling Guide
+      is also held on our website in the Employer Toolkit / Employer Guides.</p>
+
+        <!-- button link
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+        -->
+
+        <a href="summary.html" role="button" class="button">Continue</a>
+
+
+      <hr />
+      <p><a href="#">Print this page</a></p>
+      <p><a href="/employer-services.html">Back to Employer Services home</a></p>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

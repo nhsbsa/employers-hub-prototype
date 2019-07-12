@@ -1,0 +1,167 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  Amend and / or re-submit - Error handling - Pensions Online - NHSBSA
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="service-header">
+    <ul class="list">
+      <li><a class="log-out-link" id="logout-link" href="/employer-service/fic/logout">Sign out</a></li>
+      <li><a class="log-out-link" id="change-password-link" href="/employer-service/fic/change-password">Change your password</a></li>
+    </ul>
+    <a href="/e-forms-tiles.html" class="link-back">Back</a>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        <span class="heading-secondary">Pensions Online - Error handling</span>
+        Error
+      </h1>
+
+      <form action="" method="get" class="form">
+        <fieldset>
+          <legend class="visuallyhidden">Error</legend>
+
+          <div class="error-summary" role="group" aria-labelledby="error-summary-heading-example-1" tabindex="-1">
+            <h1 class="heading-medium error-summary-heading" id="error-summary-heading-example-1">
+              There is a problem
+            </h1>
+            <ul class="error-summary-list">
+              <li><a href="#nino">This must match the data we hold, if this is correct, please amend via
+              the changes in the SD55 form</a></li>
+            </ul>
+          </div>
+
+          <div class="form-text">
+
+            <div class="form-group">
+              <p>Click <a href="#">here</a> to view the ADP4</p>
+            </div>
+
+            <div class="form-group">
+            <table>
+              <thead>
+                <tr>
+                  <th colspan="2">Error details</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Error code</td>
+                  <td>0186</td>
+                </tr>
+                <tr>
+                  <td>Error description</td>
+                  <td>No emp found match Emp ID-EA Code and DOC-DOT</td>
+                </tr>
+                <tr>
+                  <td>Field in error</td>
+                  <td>NA</td>
+                </tr>
+                <tr>
+                  <td>Data in error</td>
+                  <td>NA</td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="surname">Surname</label>
+              <p>TBC</p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="forename">Forename</label>
+              <p>TBC</p>
+            </div>
+            <div class="form-group">
+              <span class="error-message">
+                <span class="visuallyhidden">Error:</span> Enter valid NI number
+              </span>
+              <label class="form-label" for="nino">Nino</label>
+              <input class="form-control" id="nino" type="text">
+            </div>
+            <div class="form-group">
+              <span class="error-message">
+                <span class="visuallyhidden">Error:</span> Enter valid Membership number
+              </span>
+              <label class="form-label" for="membership-number">Membership number</label>
+              <input class="form-control" id="membership-number" type="text">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="ea-ref">EA Reference number</label>
+              <p>25490885</p>
+            </div>
+            <div class="form-group">
+              <span class="error-message">
+                <span class="visuallyhidden">Error:</span> Enter start date
+              </span>
+              <label class="form-label" for="start-date">Start date</label>
+              <p class="form-hint">For example, TBC</p>
+              <div class="form-date">
+                <div class="form-group form-group-day">
+                  <label for="start-date-day">Day</label> <input class="form-control" id="start-date-day" max="31" min="0"
+                  name="start-date-day" pattern="[0-9]*" type="number">
+                </div>
+                <div class="form-group form-group-month">
+                  <label for="start-date-month">Month</label> <input class="form-control" id="start-date-month" max="12" min="0"
+                  name="start-date-month" pattern="[0-9]*" type="number">
+                </div>
+                <div class="form-group form-group-year">
+                  <label for="start-date-year">Year</label> <input class="form-control" id="start-date-year" max="2014" min="0"
+                  name="start-date-year" pattern="[0-9]*" type="number">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <span class="error-message">
+                <span class="visuallyhidden">Error:</span> Enter employer ID
+              </span>
+              <label class="form-label" for="employer-id">Emp ID</label>
+              <input class="form-control" id="employer-id" type="text">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="ea-code">EA / GP code</label>
+              <p>5663</p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="target-date">Target date</label>
+              <p>12 6 2018</p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="form">Form</label>
+              <p>SD55</p>
+            </div>
+
+            <h3 class="heading-medium">TBC (e.g. Actions)</h3>
+            <ul class="list">
+              <li>Amend and / or re-submit</li>
+              <li><a href="#">View data only</a></li>
+              <li><a href="#">Re-allocate error back to NHS Pensions</a></li>
+              <li><a href="#">Extend target date</a></li>
+              <li><a href="#">Delete error</a></li>
+              <li><a href="#">Return to error list</a></li>
+            </ul>
+
+        </div>
+      </fieldset>
+
+      <a href="joining-overview.html" role="button" class="button">Continue</a>
+
+      </form>
+
+      <hr />
+      <p><a href="#">Print this page</a></p>
+      <p><a href="/employer-services.html">Back to Employer Services home</a></p>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

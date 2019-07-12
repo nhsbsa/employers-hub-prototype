@@ -1,0 +1,135 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  Add comment - Error handling - Pensions Online - NHSBSA
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="service-header">
+    <ul class="list">
+      <li><a class="log-out-link" id="logout-link" href="/employer-service/fic/logout">Sign out</a></li>
+      <li><a class="log-out-link" id="change-password-link" href="/employer-service/fic/change-password">Change your password</a></li>
+    </ul>
+    <a href="/e-forms-tiles.html" class="link-back">Back</a>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        <span class="heading-secondary">Pensions Online - Error handling</span>
+        Error
+      </h1>
+
+      <form action="" method="get" class="form">
+        <fieldset>
+          <legend class="visuallyhidden">Error</legend>
+
+          <div class="form-text">
+
+            <div class="form-group">
+              <p>Click <a href="#">here</a> to view the ADP4</p>
+            </div>
+
+            <div class="form-group">
+            <table>
+              <thead>
+                <tr>
+                  <th colspan="2">Error details</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Error code</td>
+                  <td>0072</td>
+                </tr>
+                <tr>
+                  <td>Error description</td>
+                  <td>Change to or from WT for Capacity 3 or 8</td>
+                </tr>
+                <tr>
+                  <td>Comment</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="surname">Surname</label>
+              <p>Tavernor</p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="forename">Forename</label>
+              <p>Rosalyn</p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="nino">Nino</label>
+              <p>NE585289C</p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="membership-number">Membership number</label>
+              <p>65047362</p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="ea-ref">EA Reference number</label>
+              <p>20842165</p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="start-date">Start date</label>
+              <p>7 7 2008</p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="employer-id">Emp ID</label>
+              <p>16</p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="ea-code">EA / GP code</label>
+              <p>5663</p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="target-date">Target date</label>
+              <p>23 5 2017</p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="form">Form</label>
+              <p>SD55</p>
+            </div>
+
+            <h3 class="heading-medium">TBC (e.g. Actions)</h3>
+            <ul class="list">
+              <li><a href="#">View data only</a></li>
+              <li><a href="#">Return to error list</a></li>
+            </ul>
+
+            <h3 class="heading-medium">Add comment</h3>
+            <div class="form-group">
+              <label class="form-label" for="comment">Please add your comment text</label>
+              <textarea class="form-control" id="comment" rows="4" cols="50" style="width: 100%;"></textarea>
+            </div>
+
+        </div>
+      </fieldset>
+
+      <!-- button link
+      <div class="form-group">
+        <input class="button" type="submit" value="Continue">
+      </div>
+      -->
+
+      <a href="confirm-account.html" role="button" class="button">Continue</a>
+
+      </form>
+
+      <hr />
+      <p><a href="#">Print this page</a></p>
+      <p><a href="/employer-services.html">Back to Employer Services home</a></p>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

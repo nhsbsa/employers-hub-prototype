@@ -1,0 +1,81 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  Errors - Error handling - Pensions Online - NHSBSA
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="service-header">
+    <ul class="list">
+      <li><a class="log-out-link" id="logout-link" href="/employer-service/fic/logout">Sign out</a></li>
+      <li><a class="log-out-link" id="change-password-link" href="/employer-service/fic/change-password">Change your password</a></li>
+    </ul>
+    <a href="select-error.html" class="link-back">Back</a>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-full-width">
+
+      <h1 class="heading-xlarge">
+        <span class="heading-secondary">Pensions Online - Error handling</span>
+        Employer Allocated Errors
+      </h1>
+
+      <ul class="grid-row grid-row--flex">
+        <li class="column-one-third-lg">
+          <div class="govuk-card">
+            <div class="govuk-card__content">
+              <h3 class="heading-medium govuk-card__heading">Updates</h3>
+            </div>
+            <div class="govuk-card__actions">
+              <ul class="govuk-card__actions-list">
+                <li><a href="esd55/select-employee.html">SD55 - Annual update</a></li>
+                <li><a href="esd55t/select-employee.html">SD55T - Terminating a period of membership</a></li>
+                <li><a href="esd55g/select-employee.html">SD55G - Updating a members personal detail</a></li>
+                <li><a href="esd55e/select-employee.html">SD55E - Change a members employment details</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="column-one-third-lg">
+          <div class="govuk-card">
+            <div class="govuk-card__content">
+              <h3 class="heading-medium govuk-card__heading">Joiners</h3>
+            </div>
+            <div class="govuk-card__actions">
+              <ul class="govuk-card__actions-list">
+                <li><a href="ess10/new-joiner.html">SS10 - Joiner</a></li>
+                <li><a href="ess14/new-joiner.html">SS14 - GP Joiner</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="column-one-third-lg">
+          <div class="govuk-card">
+            <div class="govuk-card__content">
+              <h3 class="heading-medium govuk-card__heading">Others</h3>
+            </div>
+            <div class="govuk-card__actions">
+              <ul class="govuk-card__actions-list">
+                <li><a href="delete-employment/select-employee.html">Employment Deletion - Delete an Open or Closed Employment</a></li>
+                <li><a href="open-employment/select-employee.html">Open Employment - Open a Closed Employment</a></li>
+                <li><a href="rewind-employment/select-employee.html">Rewind Employment - Rewind an Open Employment</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+
+      <hr />
+      <p><a href="#">Print this page</a></p>
+      <p><a href="/employer-services.html">Back to Employer Services home</a></p>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
