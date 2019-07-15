@@ -1,7 +1,7 @@
 {% extends "layout_bsa.html" %}
 
 {% block page_title %}
-  View data - Error handling - Pensions Online - NHSBSA
+  Cyclic update - Error handling - Pensions Online - NHSBSA
 {% endblock %}
 
 {% block content %}
@@ -13,7 +13,7 @@
       <li><a class="log-out-link" id="logout-link" href="/employer-service/fic/logout">Sign out</a></li>
       <li><a class="log-out-link" id="change-password-link" href="/employer-service/fic/change-password">Change your password</a></li>
     </ul>
-    <a href="error-list.html" class="link-back">Back</a>
+    <a href="/e-forms-tiles.html" class="link-back">Back</a>
   </div>
 
   <div class="grid-row">
@@ -21,12 +21,12 @@
 
       <h1 class="heading-xlarge">
         <span class="heading-secondary">Pensions Online - Error handling</span>
-        TBC
+        Cyclic update
       </h1>
 
       <form action="" method="get" class="form">
         <fieldset>
-          <legend class="visuallyhidden">TBC</legend>
+          <legend class="visuallyhidden">Cyclic update</legend>
 
           <div class="form-text">
 
@@ -48,11 +48,11 @@
             </div>
             <div class="form-group">
               <label class="form-label" for="ea-code">EA Code</label>
-              <p>5663</p>
+              <p>TBC</p>
             </div>
             <div class="form-group">
               <label class="form-label" for="employment-id">Employment ID</label>
-              <p></p>
+              <p>16</p>
             </div>
             <div class="form-group">
               <label class="form-label" for="capacity-code">Capacity Code</label>
@@ -68,35 +68,27 @@
             </div>
             <div class="form-group">
               <label class="form-label" for="date-of-commencement">Date of commencement</label>
-              <p>6 11 2015</p>
+              <p>7 7 2008</p>
             </div>
             <div class="form-group">
               <label class="form-label" for="contributions-year">Contributions year</label>
-              <p>2018</p>
+              <p>2017</p>
             </div>
             <div class="form-group">
               <label class="form-label" for="employees-contributions">Employee's contributions (no AVCs)</label>
-              <p>&pound;2.43</p>
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="employees-pensionable">Employee's pensionable pay (no deemed)</label>
-              <p>&pound;43.39</p>
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="contribution-rate">Contribution rate</label>
-              <p>5.60%</p>
+              <p>&pound;10456.44</p>
             </div>
             <div class="form-group">
               <label class="form-label" for="employers-contributions">Employer's contributions</label>
-              <p>&pound;6.24</p>
+              <p>&pound;11076.12</p>
             </div>
             <div class="form-group">
-              <label class="form-label" for="employers-pensionable">Employer's pensionable pay (include any deemed)</label>
-              <p>&pound;43.39</p>
+              <label class="form-label" for="employers-pensionable">Employer's pensionable pay (include andy deemed)</label>
+              <p>&pound;77455.20</p>
             </div>
             <div class="form-group">
               <label class="form-label" for="employees-gross">Employee's gross pay (include any non pensionable)</label>
-              <p>&pound;48.81</p>
+              <p>&pound;77455.20</p>
             </div>
             <div class="form-group">
               <label class="form-label" for="employees-avc">Employee's AVCs (no money purchase)</label>
@@ -112,7 +104,7 @@
             </div>
             <div class="form-group">
               <label class="form-label" for="total-hours">Total number of pensionable hours or paid sessions worked (part time staff only)</label>
-              <p>5</p>
+              <p>156</p>
             </div>
             <div class="form-group">
               <label class="form-label" for="address">Member's private address</label>
@@ -123,14 +115,80 @@
               <p></p>
             </div>
 
+            <h3 class="heading-medium">Mid Year Contributon Rate Changes</h3>
             <div class="form-group">
-              <p>Changes are shown when you amend and / or re-submit the form</p>
+              <label class="form-label" for="period-from">Period from</label>
+              <p>TBC</p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="period-to">Period to</label>
+              <p>TBC</p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contribution-rate">Contribution rate</label>
+              <p>TBC</p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="employee-contributions">Employee contributions</label>
+              <p>&pound; </p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="employee-pay">Employee pay</label>
+              <p>&pound; </p>
+            </div>
+
+            <h3 class="heading-medium">Change in hours (1 of 5)</h3>
+            <div class="form-group">
+              <label class="form-label" for="period-to-1">From (if applicable)</label>
+              <p class="form-hint">For example, TBC</p>
+              <p>1 10 2016</p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contribution-rate-1">Nature of change</label>
+              <p>To whole time</p>
+              <p>1 10 2016</p>
+            </div>
+            <h3 class="heading-medium">Change in hours (2 of 5)</h3>
+            <div class="form-group">
+              <label class="form-label" for="period-to-2">From (if applicable)</label>
+              <p></p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contribution-rate-2">Nature of change</label>
+              <p>No change</p>
+            </div>
+            <h3 class="heading-medium">Change in hours (3 of 5)</h3>
+            <div class="form-group">
+              <label class="form-label" for="period-to-3">From (if applicable)</label>
+              <p></p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contribution-rate-3">Nature of change</label>
+              <p>No change</p>
+            </div>
+            <h3 class="heading-medium">Change in hours (4 of 5)</h3>
+            <div class="form-group">
+              <label class="form-label" for="period-to-4">From (if applicable)</label>
+              <p></p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contribution-rate-4">Nature of change</label>
+              <p>No change</p>
+            </div>
+            <h3 class="heading-medium">Change in hours (5 of 5)</h3>
+            <div class="form-group">
+              <label class="form-label" for="period-to-5">From (if applicable)</label>
+              <p></p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contribution-rate-5">Nature of change</label>
+              <p>No change</p>
             </div>
 
         </div>
       </fieldset>
 
-      <a href="specific-error.html" role="button" class="button">Return to error</a>
+      <a href="#" role="button" class="button">Return to error</a>
 
       </form>
 

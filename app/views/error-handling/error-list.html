@@ -1,0 +1,89 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  Error list - Error handling - Pensions Online - NHSBSA
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main" style="max-width: 95%;">
+
+  <div class="service-header">
+    <ul class="list">
+      <li><a class="log-out-link" id="logout-link" href="/employer-service/fic/logout">Sign out</a></li>
+      <li><a class="log-out-link" id="change-password-link" href="/employer-service/fic/change-password">Change your password</a></li>
+    </ul>
+    <a href="/e-forms-tiles.html" class="link-back">Back</a>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-full-width">
+
+      <h1 class="heading-xlarge">
+        <span class="heading-secondary">Pensions Online - Error handling</span>
+        TBC
+      </h1>
+
+      <form action="" method="get" class="form">
+        <fieldset>
+          <legend class="visuallyhidden">TBC</legend>
+
+          <div class="form-text">
+
+            <div class="form-group">
+              <h3 class="heading-medium">Employer allocated errors</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Error</th>
+                  <th scope="col">Error description</th>
+                  <th scope="col">Surname</th>
+                  <th scope="col">Forename</th>
+                  <th scope="col">NINO</th>
+                  <th scope="col">SD number</th>
+                  <th scope="col">Employer ID</th>
+                  <th scope="col">Start date</th>
+                  <th scope="col">Received</th>
+                  <th scope="col">Update / DOT</th>
+                  <th scope="col">Target date</th>
+                  <th scope="col">Escalation</th>
+                  <th scope="col">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>0403</td>
+                  <td>Mid Year Contribution Rate History Invalid</td>
+                  <td>Wrigley</td>
+                  <td>samantha</td>
+                  <td>JN571895D</td>
+                  <td>87043596</td>
+                  <td>2</td>
+                  <td>28 Mar 2016</td>
+                  <td>27 Apr 2018</td>
+                  <td>31 Mar 2016</td>
+                  <td>28 May 2018</td>
+                  <td></td>
+                  <td>New</td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+
+
+        </div>
+      </fieldset>
+
+
+
+      </form>
+
+      <hr />
+      <p><a href="#">Print this page</a></p>
+      <p><a href="/employer-services.html">Back to Employer Services home</a></p>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
