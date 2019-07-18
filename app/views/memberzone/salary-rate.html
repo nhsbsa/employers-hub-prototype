@@ -1,0 +1,70 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  Salary rate - Memberzone - Pensions Online - NHSBSA
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="service-header">
+    <ul class="list">
+      <li><a class="log-out-link" id="logout-link" href="/employer-service/fic/logout">Sign out</a></li>
+      <li><a class="log-out-link" id="change-password-link" href="/employer-service/fic/change-password">Change your password</a></li>
+    </ul>
+    <a href="#" class="link-back">Back</a>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        <span class="heading-secondary">Pensions Online - Memberzone</span>
+        TBC
+      </h1>
+
+      <form action="" method="get" class="form">
+        <fieldset>
+          <legend class="visuallyhidden">TBC</legend>
+
+          <div class="form-text">
+
+            <h3 class="heading-medium">Important</h3>
+            <p>Throughout the pension zone we aim to provide values of NHS Pension Scheme benefits. These benefits are based on pensionable pay
+            in the 1995 section and reckonable pay in the 2008 section.</p>
+            <p>For 1995 section members, unless you wish to change the provided figure, a benefit statement will be calculated using the pay figure we
+            hold of &pound;18,146.40. It is based on pensionable earnings up to 31/03/2018 as supplied by yourselves.</p>
+            <p>You can check the total membership we have used for calculation purposes by visiting the Membership History zone.</p>
+
+            <div class="form-group">
+              <label class="form-label" for="part-time-rate">Current part time rate of salary</label>
+              &pound; <input class="form-control" id="part-time-rate" name="part-time-rate" type="text"> a year
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="full-time-rate">Full time rate of salary</label>
+              &pound; <input class="form-control" id="full-time-rate" name="full-time-rate" type="text"> a year
+            </div>
+
+          </div>
+        </fieldset>
+
+        <!-- button link
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+        -->
+
+        <a href="confirm-submission.html" role="button" class="button">Continue</a>
+
+      </form>
+
+      <hr />
+      <p><a href="/employer-services.html">Back to Employer Services home</a></p>
+      <p><a href="#">Exit member record</a></p>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
