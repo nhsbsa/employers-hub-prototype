@@ -1,0 +1,268 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  Manual Calculation Request - Redundancy Forecaster - Pensions Online - NHSBSA
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="service-header">
+    <ul class="list">
+      <li><a class="log-out-link" id="logout-link" href="/employer-service/fic/logout">Sign out</a></li>
+      <li><a class="log-out-link" id="change-password-link" href="/employer-service/fic/change-password">Change your password</a></li>
+    </ul>
+    <a href="#" class="link-back">Back</a>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-full-width">
+
+      <h1 class="heading-xlarge">
+        <span class="heading-secondary">Pensions Online - Redundancy</span>
+        Member is excluded from Pensions Online
+      </h1>
+
+      <form action="" method="get" class="form">
+        <fieldset>
+          <legend class="visuallyhidden">Member is excluded from Pensions Online</legend>
+
+          <div class="form-text">
+            <p>Request for a manually calculated estimate of NHS Pensions Scheme Benefits needs to be made</p>
+
+            <div class="form-group">
+              <label class="form-label" for="name">Name</label>
+              <p>Mrs TBC</p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="dob">Date of birth</label>
+              <p>TBC</p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="sd-number">SD Number</label>
+              <p>TBC</p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="ni-number">NI Number</label>
+              <p>TBC</p>
+            </div>
+
+
+            <div class="form-group">
+              <label class="form-label" for="estimate-type">Estimate type</label>
+              <select class="form-control" id="estimate-type">
+                <option>Select</option>
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+                <option>04</option>
+                <option>05</option>
+                <option>08</option>
+                <option>10</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="nhs-net-email">If this is not your correct NHS Net email address, please amend accordingly</label>
+              <input class="form-control" id="nhs-net-email" name="nhs-net-email" type="text" value="5663@pensionsagency.nhs.uk">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="estimated-last-day">Estimated last day of pensionable employment</label>
+              <p class="form-hint">For benefit-statement purposes, NRA is 55 or 60 in the 1995 section, 65 in the 2008 section</p>
+              <input class="form-control" id="estimated-last-day" name="estimated-last-day" type="text" value="19/06/2019">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="pay-based-on">Pay on which estimate is based on</label>
+              <p class="form-hint">For part time members this should be their full time equivalent pay and for 2008 members this will be a reckonable pay figure</p>
+              <input class="form-control" id="pay-based-on" name="pay-based-on" type="text" value="22687.14">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="actual-pay">Actual Pay for Life Assurance Lump Sum</label>
+              <p class="form-hint">Please enter the actual amount of pay the member has received in the preceeding 365 days to date of calculation</p>
+              <input class="form-control" id="actual-pay" name="actual-pay" type="text" value="18146.40">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="confidential-marker">Confidential Marker</label>
+              <div class="inline">
+                <div class="multiple-choice">
+                  <input id="confidential-marker-1" type="radio" name="confidential-marker" value="Yes">
+                  <label for="confidential-marker-1">Yes</label>
+                </div>
+                <div class="multiple-choice">
+                  <input id="confidential-marker-2" type="radio" name="confidential-marker" value="No">
+                  <label for="confidential-marker-2">No</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="additional-estimates">You have an opportunity choose up to 2 additional age retirement estimates,
+              enter number of additional estimates you require</label>
+                <div class="multiple-choice">
+                  <input id="additional-estimates-1" type="radio" name="additional-estimates" value="0">
+                  <label for="additional-estimates-1">0</label>
+                </div>
+                <div class="multiple-choice">
+                  <input id="additional-estimates-2" type="radio" name="additional-estimates" value="1">
+                  <label for="additional-estimates-2">1</label>
+                </div>
+                <div class="multiple-choice">
+                  <input id="additional-estimates-2" type="radio" name="additional-estimates" value="2">
+                  <label for="additional-estimates-2">2</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+              <table>
+                <thead>
+                  <tr>
+                    <th scope="col">From <br />dd/mm/yyyy</th>
+                    <th scope="col">To <br />dd/mm/yyyy</th>
+                    <th scope="col" style="width: 15%;">Nature of change</th>
+                    <th scope="col">Actual hours (PT only)</th>
+                    <th scope="col">Standard hours (PT only)</th>
+                    <th scope="col">Actual sessions (Sessional Doctors only)</th>
+                    <th scope="col">Standard sessions (Sessional Doctors only)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>01/11/2012</td>
+                    <td>31/03/2018</td>
+                    <td>Part time</td>
+                    <td>30.00</td>
+                    <td>37.50</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><input class="form-control" id="date-from-1" type="text" value="01/04/2018" style="width: 100%;"></td>
+                    <td><input class="form-control" id="date-to-1" type="text" style="width: 100%;"></td>
+                    <td>
+                      <select class="form-control" id="nature-of-change-1" style="width: 100%;">
+                        <option>Select</option>
+                        <option>01</option>
+                        <option>02</option>
+                        <option>03</option>
+                        <option>04</option>
+                        <option>05</option>
+                        <option>08</option>
+                        <option>10</option>
+                      </select>
+                    </td>
+                    <td><input class="form-control" id="actual-hours-1" type="text" style="width: 100%;"></td>
+                    <td><input class="form-control" id="standard-hours-1" type="text" style="width: 100%;"></td>
+                    <td><input class="form-control" id="actual-sessions-1" type="text" style="width: 100%;"></td>
+                    <td><input class="form-control" id="standard-sessions-1" type="text" style="width: 100%;"></td>
+                  </tr>
+                  <tr>
+                    <td><input class="form-control" id="date-from-2" type="text" style="width: 100%;"></td>
+                    <td><input class="form-control" id="date-to-2" type="text" style="width: 100%;"></td>
+                    <td>
+                      <select class="form-control" id="nature-of-change-2" style="width: 100%;">
+                        <option>Select</option>
+                        <option>01</option>
+                        <option>02</option>
+                        <option>03</option>
+                        <option>04</option>
+                        <option>05</option>
+                        <option>08</option>
+                        <option>10</option>
+                      </select>
+                    </td>
+                    <td><input class="form-control" id="actual-hours-2" type="text" style="width: 100%;"></td>
+                    <td><input class="form-control" id="standard-hours-2" type="text" style="width: 100%;"></td>
+                    <td><input class="form-control" id="actual-sessions-2" type="text" style="width: 100%;"></td>
+                    <td><input class="form-control" id="standard-sessions-2" type="text" style="width: 100%;"></td>
+                  </tr>
+                  <tr>
+                    <td><input class="form-control" id="date-from-3" type="text" style="width: 100%;"></td>
+                    <td><input class="form-control" id="date-to-3" type="text" style="width: 100%;"></td>
+                    <td>
+                      <select class="form-control" id="nature-of-change-3" style="width: 100%;">
+                        <option>Select</option>
+                        <option>01</option>
+                        <option>02</option>
+                        <option>03</option>
+                        <option>04</option>
+                        <option>05</option>
+                        <option>08</option>
+                        <option>10</option>
+                      </select>
+                    </td>
+                    <td><input class="form-control" id="actual-hours-3" type="text" style="width: 100%;"></td>
+                    <td><input class="form-control" id="standard-hours-3" type="text" style="width: 100%;"></td>
+                    <td><input class="form-control" id="actual-sessions-3" type="text" style="width: 100%;"></td>
+                    <td><input class="form-control" id="standard-sessions-3" type="text" style="width: 100%;"></td>
+                  </tr>
+                  <tr>
+                    <td><input class="form-control" id="date-from-4" type="text" style="width: 100%;"></td>
+                    <td><input class="form-control" id="date-to-4" type="text" style="width: 100%;"></td>
+                    <td>
+                      <select class="form-control" id="nature-of-change-4" style="width: 100%;">
+                        <option>Select</option>
+                        <option>01</option>
+                        <option>02</option>
+                        <option>03</option>
+                        <option>04</option>
+                        <option>05</option>
+                        <option>08</option>
+                        <option>10</option>
+                      </select>
+                    </td>
+                    <td><input class="form-control" id="actual-hours-4" type="text" style="width: 100%;"></td>
+                    <td><input class="form-control" id="standard-hours-4" type="text" style="width: 100%;"></td>
+                    <td><input class="form-control" id="actual-sessions-4" type="text" style="width: 100%;"></td>
+                    <td><input class="form-control" id="standard-sessions-4" type="text" style="width: 100%;"></td>
+                  </tr>
+                  <tr>
+                    <td><input class="form-control" id="date-from-5" type="text" style="width: 100%;"></td>
+                    <td><input class="form-control" id="date-to-5" type="text" style="width: 100%;"></td>
+                    <td>
+                      <select class="form-control" id="nature-of-change-5" style="width: 100%;">
+                        <option>Select</option>
+                        <option>01</option>
+                        <option>02</option>
+                        <option>03</option>
+                        <option>04</option>
+                        <option>05</option>
+                        <option>08</option>
+                        <option>10</option>
+                      </select>
+                    </td>
+                    <td><input class="form-control" id="actual-hours-5" type="text" style="width: 100%;"></td>
+                    <td><input class="form-control" id="standard-hours-5" type="text" style="width: 100%;"></td>
+                    <td><input class="form-control" id="actual-sessions-5" type="text" style="width: 100%;"></td>
+                    <td><input class="form-control" id="standard-sessions-5" type="text" style="width: 100%;"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+        </fieldset>
+
+        <!-- button link
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+        -->
+
+        <a href="#" role="button" class="button">Submit</a>
+
+      </form>
+
+      <hr />
+      <p><a href="/employer-services.html">Back to Employer Services home</a></p>
+      <p><a href="#">Exit member record</a></p>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
