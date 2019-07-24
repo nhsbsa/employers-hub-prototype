@@ -1,0 +1,185 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  EA Code change - External ADP4 - Pensions Online - NHSBSA
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main" style="max-width: 95%;">
+
+  <div class="service-header">
+    <ul class="list">
+      <li><a class="log-out-link" id="logout-link" href="/employer-service/fic/logout">Sign out</a></li>
+      <li><a class="log-out-link" id="change-password-link" href="/employer-service/fic/change-password">Change your password</a></li>
+    </ul>
+    <a href="/e-forms-tiles.html" class="link-back">Back</a>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-full-width">
+
+      <h1 class="heading-xlarge">
+        <span class="heading-secondary">Pensions Online - ADP4</span>
+        EA Code change
+      </h1>
+
+      <form action="" method="get" class="form">
+        <fieldset>
+          <legend class="visuallyhidden">EA Code change</legend>
+
+          <div class="form-text">
+            <p>This data was correct as at 15/01/2019, 05:20. Any changes made to personal or employment details after this time will not be reflected</p>
+
+            <div class="form-group">
+              <label class="form-label" for="new-ea-code">New EA Code</label>
+              <input class="form-control" id="new-ea-code" name="new-ea-code" type="text">
+            </div>
+            <div class="form-group">
+              <a href="#" role="button" class="button">Update selected</a>
+              <a href="#" role="button" class="button">Update all</a>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="search">Search by</label>
+              <select class="form-control" id="search">
+                <option>Select</option>
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+                <option>04</option>
+                <option>05</option>
+                <option>08</option>
+                <option>10</option>
+              </select><br /><br />
+              <input class="form-control" id="search" name="search" type="text">
+            </div>
+            <div class="form-group">
+              <a href="#" role="button" class="button">Search</a>
+            </div>
+
+            <div class="form-group">
+              <table>
+                <thead>
+                  <tr>
+                    <th scope="col">Surname</th>
+                    <th scope="col">Forename</th>
+                    <th scope="col">NI number</th>
+                    <th scope="col">SD number</th>
+                    <th scope="col">Scheme</th>
+                    <th scope="col">EMP ID</th>
+                    <th scope="col">EA Ref</th>
+                    <th scope="col">Start date</th>
+                    <th scope="col">Updated to</th>
+                    <th scope="col">SC/MHO</th>
+                    <th scope="col">Added Yrs</th>
+                    <th scope="col">Additional Pension</th>
+                    <th scope="col">ERRBO</th>
+                    <th scope="col">WTPT</th>
+                    <th scope="col">TV In</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>TBC</td>
+                    <td>TBC</td>
+                    <td>TBC</td>
+                    <td>TBC</td>
+                    <td>2015</td>
+                    <td>4</td>
+                    <td>21345134</td>
+                    <td>06-Apr-2009</td>
+                    <td>31-ar-2018</td>
+                    <td>N</td>
+                    <td>N</td>
+                    <td>N</td>
+                    <td>N</td>
+                    <td>WT</td>
+                    <td>Y</td>
+                  </tr>
+                  <tr>
+                    <td>TBC</td>
+                    <td>TBC</td>
+                    <td>TBC</td>
+                    <td>TBC</td>
+                    <td>2015</td>
+                    <td>1</td>
+                    <td>25459012</td>
+                    <td>21-Sep-2015</td>
+                    <td>31-Mar-2018</td>
+                    <td>N</td>
+                    <td>N</td>
+                    <td>N</td>
+                    <td>N</td>
+                    <td>PT</td>
+                    <td>N</td>
+                  </tr>
+                  <tr>
+                    <td>TBC</td>
+                    <td>TBC</td>
+                    <td>TBC</td>
+                    <td>TBC</td>
+                    <td>2015</td>
+                    <td>6</td>
+                    <td>23384048</td>
+                    <td>30-Jul-2012</td>
+                    <td>31-Mar-2018</td>
+                    <td>N</td>
+                    <td>N</td>
+                    <td>N</td>
+                    <td>N</td>
+                    <td>PT</td>
+                    <td>N</td>
+                  </tr>
+                  <tr>
+                    <td>TBC</td>
+                    <td>TBC</td>
+                    <td>TBC</td>
+                    <td>TBC</td>
+                    <td>2015</td>
+                    <td>3</td>
+                    <td>11627997</td>
+                    <td>05-Nov-2003</td>
+                    <td>31-Mar-2018</td>
+                    <td>N</td>
+                    <td>N</td>
+                    <td>N</td>
+                    <td>N</td>
+                    <td>PT</td>
+                    <td>N</td>
+                  </tr>
+                  <tr>
+                    <td>TBC</td>
+                    <td>TBC</td>
+                    <td>TBC</td>
+                    <td>TBC</td>
+                    <td>2015</td>
+                    <td>6</td>
+                    <td>27151522</td>
+                    <td>01-Apr-2018</td>
+                    <td></td>
+                    <td>N</td>
+                    <td>N</td>
+                    <td>N</td>
+                    <td>N</td>
+                    <td>PT</td>
+                    <td>N</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+        </fieldset>
+
+      </form>
+
+      <hr />
+      <p><a href="/employer-services.html">Back to Employer Services home</a></p>
+      <p><a href="#">Exit member record</a></p>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

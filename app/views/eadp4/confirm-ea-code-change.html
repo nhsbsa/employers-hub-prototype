@@ -1,0 +1,86 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  Confirmaton - External ADP4 - Pensions Online - NHSBSA
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="service-header">
+    <ul class="list">
+      <li><a class="log-out-link" id="logout-link" href="/employer-service/fic/logout">Sign out</a></li>
+      <li><a class="log-out-link" id="change-password-link" href="/employer-service/fic/change-password">Change your password</a></li>
+    </ul>
+    <a href="#" class="link-back">Back</a>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        <span class="heading-secondary">Pensions Online - ADP4</span>
+        Below is a list of the members you will be changing
+      </h1>
+
+      <form action="" method="get" class="form">
+        <fieldset>
+          <legend class="visuallyhidden">Below is a list of the members you will be changing</legend>
+
+          <div class="form-text">
+
+            <div class="form-group">
+
+                <table>
+                  <thead>
+                    <tr>
+                      <th scope="col">NI number</th>
+                      <th scope="col">SD number</th>
+                      <th scope="col">Employment ID</th>
+                      <th scope="col">Surname</th>
+                      <th scope="col">Forename</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>SL879407D</td>
+                      <td>81053997</td>
+                      <td>6</td>
+                      <td>TBC</td>
+                      <td>TBC</td>
+                    </tr>
+                    <tr>
+                      <td>JJ524751D</td>
+                      <td>82005461</td>
+                      <td>1</td>
+                      <td>TBC</td>
+                      <td>TBC</td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+
+          </div>
+        </fieldset>
+
+        <!-- button link
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+        -->
+
+        <a href="#" role="button" class="button">Yes, confirm</a>
+        <a href="#" role="button" class="button">No, cancel</a>
+
+      </form>
+
+      <hr />
+      <p><a href="#">Print this page</a></p>
+      <p><a href="/employer-services.html">Back to Employer Services home</a></p>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

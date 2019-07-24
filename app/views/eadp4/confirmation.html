@@ -1,0 +1,44 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  ADP4 Submitted - External ADP4 - Pensions Online - NHSBSA
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="service-header">
+    <ul class="list">
+      <li><a class="log-out-link" id="logout-link" href="/employer-service/fic/logout">Sign out</a></li>
+      <li><a class="log-out-link" id="change-password-link" href="/employer-service/fic/change-password">Change your password</a></li>
+    </ul>
+    <a href="#" class="link-back">Back</a>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <div class="done-panel done-panel--center">
+        <h1 class="heading-xlarge"><span id="done-tick"></span>ADP4 submitted</h1>
+        <h2 class="heading-large"><span class="heading-secondary">ADP4 Records have now been submitted and will be updated shortly. Thank you.</span></h2>
+      </div>
+
+      <!-- button link
+      <div class="form-group">
+        <input class="button" type="submit" value="Continue">
+      </div>
+      -->
+
+      <a href="#" role="button" class="button">OK</a>
+
+
+      <hr />
+      <p><a href="/employer-services.html">Back to Employer Services home</a></p>
+      <p><a href="#">Exit member record</a></p>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
