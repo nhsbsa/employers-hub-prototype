@@ -1,0 +1,71 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  Payment method - External RF12 - Pensions Online - NHSBSA
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="service-header">
+    <ul class="list">
+      <li><a class="log-out-link" id="logout-link" href="/employer-service/fic/logout">Sign out</a></li>
+      <li><a class="log-out-link" id="change-password-link" href="/employer-service/fic/change-password">Change your password</a></li>
+    </ul>
+    <a href="#" class="link-back">Back</a>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        <span class="heading-secondary">Pensions Online - RF12</span>
+        Please select a method of payment
+      </h1>
+
+      <form action="" method="get" class="form">
+        <fieldset>
+          <legend class="visuallyhidden">Please select a method of payment</legend>
+
+          <div class="form-text">
+
+            <div class="form-group">
+              <div class="multiple-choice">
+                <input id="radio-1" type="radio" name="radio-group" value="Bank or building society">
+                <label for="radio-1">Into a bank / building society</label>
+              </div>
+              <div class="multiple-choice">
+                <input id="radio-2" type="radio" name="radio-group" value="To a nominee">
+                <label for="radio-2">To a nominee <span class="form-hint">Payment is to be made to a third party</span></label>
+              </div>
+              <div class="multiple-choice">
+                <input id="radio-3" type="radio" name="radio-group" value="Authorisation case">
+                <label for="radio-3">Authorisation case <span class="form-hint">Payment is to be made to the employer</span></label>
+              </div>
+              <div class="multiple-choice">
+                <input id="radio-4" type="radio" name="radio-group" value="Home address">
+                <label for="radio-4">Home address <span class="form-hint">This option is only available for members who hold a
+                foreign bank account and therefore payment via BACS is not possible</span></label>
+              </div>
+            </div>
+
+          </div>
+        </fieldset>
+
+        <!-- button link
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+        -->
+
+        <a href="joining.html" role="button" class="button">Continue</a>
+
+      </form>
+
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

@@ -1,0 +1,109 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  Form Part A - External RF12 - Pensions Online - NHSBSA
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="service-header">
+    <ul class="list">
+      <li><a class="log-out-link" id="logout-link" href="/employer-service/fic/logout">Sign out</a></li>
+      <li><a class="log-out-link" id="change-password-link" href="/employer-service/fic/change-password">Change your password</a></li>
+    </ul>
+    <a href="#" class="link-back">Back</a>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        <span class="heading-secondary">Pensions Online - RF12</span>
+        Part A
+      </h1>
+
+      <form action="" method="get" class="form">
+        <fieldset>
+          <legend class="visuallyhidden">Part A</legend>
+
+          <div class="form-text">
+
+            <div class="form-group">
+              <label class="form-label" for="national-insurance-number">National Insurance number</label>
+              <p>NR361065C</p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="pension-ref">Pension reference number</label>
+              <p>TBC</p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="title">Title</label>
+              <p>TBC</p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="surname">Surname</label>
+              <p>TBC</p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="forenames">Forenames</label>
+              <p>TBC</p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="previous-surname">Previous surname</label>
+              <p>TBC</p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="dob">Date of birth</label>
+              <p>01/10/1968</p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="membership-last-day">Last day of membership</label>
+              <p>05/04/2018</p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="ea-code">EA Code</label>
+              <p>D266</p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="termination-reason">Reason for termination</label>
+              <p>01</p>
+            </div>
+            <p>If any of the above details need amending, please exit this form and make amendments via the appropriate e-form before continuing</p>
+
+            <div class="form-group">
+              <label class="form-label" for="address">Address</label>
+              <label class="form-label" for="address-line-1"><span class="visuallyhidden">Building and street line 1 of 3</span></label>
+              <input class="form-control" id="address-line-1" type="text">
+              <label class="form-label" for="address-line-2"><span class="visuallyhidden">Building and street line 2 of 3</span></label>
+              <input class="form-control" id="address-line-2" type="text">
+              <label class="form-label" for="address-line-3"><span class="visuallyhidden">Building and street line 3 of 3</span></label>
+              <input class="form-control" id="address-line-3" type="text">
+              <label class="form-label" for="address-line-4"><span class="visuallyhidden">Town or city</span></label>
+              <input class="form-control" id="address-line-4" type="text">
+              <label class="form-label" for="address-postcode">Postcode</label>
+              <input class="form-control" id="address-postcode" type="text">
+              <label class="form-label" for="address-country">Country</label>
+              <input class="form-control" id="address-country" type="text">
+            </div>
+
+          </div>
+        </fieldset>
+
+        <!-- button link
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+        -->
+
+        <a href="#" role="button" class="button">Continue</a>
+
+      </form>
+
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
