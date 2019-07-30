@@ -1,0 +1,130 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  Print page - External RF12 - Pensions Online - NHSBSA
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="service-header">
+    <ul class="list">
+      <li><a class="log-out-link" id="logout-link" href="/employer-service/fic/logout">Sign out</a></li>
+      <li><a class="log-out-link" id="change-password-link" href="/employer-service/fic/change-password">Change your password</a></li>
+    </ul>
+    <a href="#" class="link-back">Back</a>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        <span class="heading-secondary">Pensions Online - RF12</span>
+        Part A
+      </h1>
+
+      <form action="" method="get" class="form">
+        <fieldset>
+          <legend class="visuallyhidden">Part A</legend>
+
+          <div class="form-text">
+
+            <div class="form-group">
+              <label class="form-label" for="ni-number">NI number</label>
+              <p>ST56430C</p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="ref-number">Pension reference number</label>
+              <p>TBC</p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="title">Title</label>
+              <p>TBC</p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="surname">Surname</label>
+              <p>TBC</p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="forenames">Forenames</label>
+              <p>TBC</p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="previous-surname">Previous surname</label>
+              <p></p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="dob">Date of birth</label>
+              <p>25/11/1992</p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="last-membership-day">Last day of membership</label>
+              <p>15/04/2018</p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="ea-code">EA Code</label>
+              <p>3423</p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="termination-reason">Reason for termination</label>
+              <p>01</p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="address">Address</label>
+              <p>TBC</p>
+              <p>TBC</p>
+              <p>TBC</p>
+              <p>TBC</p>
+              <p>Post code</p>
+              <p></p>
+              <p>Country</p>
+              <p></p>
+            </div>
+
+            <h2 class="heading-large">Part B</h2>
+            <div class="form-group">
+              <label class="form-label" for="method-of-payment">Method of payment</label>
+              <p>To a nominee</p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="nominee-name">Name of nominee</label>
+              <p>TBC</p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="address">Address</label>
+              <p>TBC</p>
+              <label class="form-label" for="address-postcode">Address</label>
+              <p>W2 3EA</p>
+              <label class="form-label" for="address-country">Country</label>
+              <p>UK</p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="ni-earnings">1st year NI Earnings</label>
+              <p>&pound;120.00</p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="roll-number">Contracted out NI Earnings?</label>
+              <p>No</p>
+            </div>
+
+
+          </div>
+        </fieldset>
+
+        <!-- button link
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+        -->
+
+        <a href="#" role="button" class="button">Print RF12 form and return to E-Forms menu</a>
+
+      </form>
+
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

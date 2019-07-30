@@ -1,0 +1,65 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  Part 2 - External RF12 - Pensions Online - NHSBSA
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="service-header">
+    <ul class="list">
+      <li><a class="log-out-link" id="logout-link" href="/employer-service/fic/logout">Sign out</a></li>
+      <li><a class="log-out-link" id="change-password-link" href="/employer-service/fic/change-password">Change your password</a></li>
+    </ul>
+    <a href="#" class="link-back">Back</a>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        <span class="heading-secondary">Pensions Online - RF12</span>
+        TBC
+      </h1>
+
+      <form action="" method="get" class="form">
+        <fieldset>
+          <legend class="visuallyhidden">TBC</legend>
+
+          <div class="form-text">
+
+            <div class="form-group">
+              <label class="form-label" for="ni-earnings">As membership spans 3 tax years, please enter 1st year NI Earnings</label>
+              &pound; <input class="form-control" id="ni-earnings" type="text">
+            </div>
+
+            <div class="form-group">
+              <div class="multiple-choice">
+                <input id="checkbox-no-contracted-ni-earnings" name="no-contracted-ni-earnings" type="checkbox" value="true">
+                <label for="checkbox-no-contracted-ni-earnings">
+                  If there are no Contracted Out NI Earnings, please tick the box
+                </label>
+              </div>
+            </div>
+
+          </div>
+        </fieldset>
+
+        <!-- button link
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+        -->
+
+        <a href="#" role="button" class="button">Continue</a>
+
+      </form>
+
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
