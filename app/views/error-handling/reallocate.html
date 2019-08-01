@@ -1,7 +1,7 @@
 {% extends "layout_bsa.html" %}
 
 {% block page_title %}
-  Amend and / or re-submit - Error handling - Pensions Online - NHSBSA
+  Re-allocate error back to NHS Pensions - Error handling - Pensions Online - NHSBSA
 {% endblock %}
 
 {% block content %}
@@ -27,16 +27,6 @@
       <form action="" method="get" class="form">
         <fieldset>
           <legend class="visuallyhidden">Error</legend>
-
-          <div class="error-summary" role="group" aria-labelledby="error-summary-heading-example-1" tabindex="-1">
-            <h1 class="heading-medium error-summary-heading" id="error-summary-heading-example-1">
-              There is a problem
-            </h1>
-            <ul class="error-summary-list">
-              <li><a href="#nino">This must match the data we hold, if this is correct, please amend via
-              the changes in the SD55 form</a></li>
-            </ul>
-          </div>
 
           <div class="form-text">
 
@@ -65,7 +55,7 @@
                   <td>NA</td>
                 </tr>
                 <tr>
-                  <td>Data in error</td>
+                  <td>Date in error</td>
                   <td>NA</td>
                 </tr>
               </tbody>
@@ -81,50 +71,24 @@
               <p>TBC</p>
             </div>
             <div class="form-group">
-              <span class="error-message">
-                <span class="visuallyhidden">Error:</span> Enter valid NI number
-              </span>
               <label class="form-label" for="nino">Nino</label>
-              <input class="form-control" id="nino" type="text">
+              <p>TBC</p>
             </div>
             <div class="form-group">
-              <span class="error-message">
-                <span class="visuallyhidden">Error:</span> Enter valid Membership number
-              </span>
               <label class="form-label" for="membership-number">Membership number</label>
-              <input class="form-control" id="membership-number" type="text">
+              <p>TBC</p>
             </div>
             <div class="form-group">
               <label class="form-label" for="ea-ref">EA Reference number</label>
-              <p>25490885</p>
+              <p>TBC</p>
             </div>
             <div class="form-group">
-              <span class="error-message">
-                <span class="visuallyhidden">Error:</span> Enter start date
-              </span>
               <label class="form-label" for="start-date">Start date</label>
-              <p class="form-hint">For example, TBC</p>
-              <div class="form-date">
-                <div class="form-group form-group-day">
-                  <label for="start-date-day">Day</label> <input class="form-control" id="start-date-day" max="31" min="0"
-                  name="start-date-day" pattern="[0-9]*" type="number">
-                </div>
-                <div class="form-group form-group-month">
-                  <label for="start-date-month">Month</label> <input class="form-control" id="start-date-month" max="12" min="0"
-                  name="start-date-month" pattern="[0-9]*" type="number">
-                </div>
-                <div class="form-group form-group-year">
-                  <label for="start-date-year">Year</label> <input class="form-control" id="start-date-year" max="2014" min="0"
-                  name="start-date-year" pattern="[0-9]*" type="number">
-                </div>
-              </div>
+              <p>6 10 2015</p>
             </div>
             <div class="form-group">
-              <span class="error-message">
-                <span class="visuallyhidden">Error:</span> Enter employer ID
-              </span>
               <label class="form-label" for="employer-id">Emp ID</label>
-              <input class="form-control" id="employer-id" type="text">
+              <p></p>
             </div>
             <div class="form-group">
               <label class="form-label" for="ea-code">EA / GP code</label>
@@ -140,18 +104,29 @@
             </div>
 
             <ul class="list">
-              <li>Amend and / or re-submit</li>
+              <li><a href="amend.html">Amend and / or re-submit</a></li>
               <li><a href="view-data.html">View data only</a></li>
-              <li><a href="reallocate.html">Re-allocate error back to NHS Pensions</a></li>
               <li><a href="extend-target-date.html">Extend target date</a></li>
               <li><a href="delete-error.html">Delete error</a></li>
               <li><a href="error-list.html">Return to error list</a></li>
             </ul>
 
+            <h3 class="heading-medium">Re-allocate error back to NHS Pensions</h3>
+            <div class="form-group">
+              <label class="form-label" for="comment">Please explain your reasons for re-allocating this error back to NHS Pensions</label>
+              <textarea class="form-control" id="comment" rows="4" cols="50" style="width: 100%;"></textarea>
+            </div>
+
         </div>
       </fieldset>
 
-      <a href="/esd55/select-employee.html" role="button" class="button">Continue to SD55 form</a>
+      <!-- button link
+      <div class="form-group">
+        <input class="button" type="submit" value="Continue">
+      </div>
+      -->
+
+      <a href="#" role="button" class="button">Submit</a>
 
       </form>
 

@@ -48,7 +48,7 @@
                 </tr>
                 <tr>
                   <td>Error description</td>
-                  <td>No emp found match Emp ID-EA Code and DOC-DOT</td>
+                  <td>Input for employment that has already closed</td>
                 </tr>
                 <tr>
                   <td>Field in error</td>
@@ -80,23 +80,23 @@
             </div>
             <div class="form-group">
               <label class="form-label" for="ea-ref">EA Reference number</label>
-              <p>TBC</p>
+              <p>20973609-2</p>
             </div>
             <div class="form-group">
               <label class="form-label" for="start-date">Start date</label>
-              <p>6 10 2015</p>
+              <p>10/07/2013</p>
             </div>
             <div class="form-group">
               <label class="form-label" for="employer-id">Emp ID</label>
-              <p></p>
+              <p>2</p>
             </div>
             <div class="form-group">
               <label class="form-label" for="ea-code">EA / GP code</label>
-              <p>5663</p>
+              <p>4451</p>
             </div>
             <div class="form-group">
               <label class="form-label" for="target-date">Target date</label>
-              <p>12 6 2018</p>
+              <p>29/05/2017</p>
             </div>
             <div class="form-group">
               <label class="form-label" for="form">Form</label>
@@ -106,14 +106,31 @@
             <ul class="list">
               <li><a href="amend.html">Amend and / or re-submit</a></li>
               <li><a href="view-data.html">View data only</a></li>
-              <li><a href="extend-target-date.html">Extend target date</a></li>
+              <li><a href="reallocate.html">Re-allocate error back to NHS Pensions</a></li>
               <li><a href="delete-error.html">Delete error</a></li>
               <li><a href="error-list.html">Return to error list</a></li>
             </ul>
 
-            <h3 class="heading-medium">Re-allocate error back to NHS Pensions</h3>
+            <h3 class="heading-medium">Extend target date</h3>
             <div class="form-group">
-              <label class="form-label" for="comment">Please explain your reasons for re-allocating this error back to NHS Pensions</label>
+              <label class="form-label" for="date">Please enter a valid date in format dd/mm/yyyy</label>
+              <div class="form-date">
+                <div class="form-group form-group-day">
+                  <label for="period-from-day">Day</label> <input class="form-control" id="period-from-day" max="31" min="0"
+                  name="period-from-day" pattern="[0-9]*" type="number">
+                </div>
+                <div class="form-group form-group-month">
+                  <label for="period-from-month">Month</label> <input class="form-control" id="period-from-month" max="12" min="0"
+                  name="period-from-month" pattern="[0-9]*" type="number">
+                </div>
+                <div class="form-group form-group-year">
+                  <label for="period-from-year">Year</label> <input class="form-control" id="period-from-year" max="2014" min="0"
+                  name="period-from-year" pattern="[0-9]*" type="number">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="comment">Please explain your reasons for extending this target date</label>
               <textarea class="form-control" id="comment" rows="4" cols="50" style="width: 100%;"></textarea>
             </div>
 
