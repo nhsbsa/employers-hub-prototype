@@ -1,0 +1,121 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  GS184 - Notifications - Pensions Online - NHSBSA
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main" style="max-width: 95%;">
+
+  <div class="service-header">
+    <ul class="list">
+      <li><a class="log-out-link" id="logout-link" href="/employer-service/fic/logout">Sign out</a></li>
+      <li><a class="log-out-link" id="change-password-link" href="/employer-service/fic/change-password">Change your password</a></li>
+    </ul>
+    <a href="#" class="link-back">Back</a>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-full-width">
+
+      <h1 class="heading-xlarge">
+        <span class="heading-secondary">Pensions Online - Notifications</span>
+        GS184
+      </h1>
+
+      <form action="" method="get" class="form">
+        <fieldset>
+          <legend class="visuallyhidden">GS184</legend>
+
+          <div class="form-text">
+
+            <p>You are currently logged-in as an Employer for EA 4824</p>
+            <p>To delete any records, please select the checkbox and press delete.</p>
+            <div class="form-group">
+                <table>
+                  <thead>
+                    <tr>
+                      <th scope="col">NI number</th>
+                      <th scope="col">SD number</th>
+                      <th scope="col">Surname</th>
+                      <th scope="col">Forenames</th>
+                      <th scope="col">DOB</th>
+                      <th scope="col">DOB verified</th>
+                      <th scope="col" class="numeric">EA reference</th>
+                      <th scope="col">DOC</th>
+                      <th scope="col">EMP ID</th>
+                      <th scope="col">Comments</th>
+                      <th scope="col">Processed date</th>
+                      <th scope="col">Delete</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>TBC</td>
+                      <td>TBC</td>
+                      <td>TBC</td>
+                      <td>TBC</td>
+                      <td>TBC</td>
+                      <td>Yes</td>
+                      <td class="numeric">27578366</td>
+                      <td>17-Sep-2018</td>
+                      <td>1</td>
+                      <td>Yes</td>
+                      <td>12-Jan-2019</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>TBC</td>
+                      <td>TBC</td>
+                      <td>TBC</td>
+                      <td>TBC</td>
+                      <td>TBC</td>
+                      <td>Yes</td>
+                      <td class="numeric">27642691</td>
+                      <td>12-Nov-2018</td>
+                      <td>1</td>
+                      <td>Yes</td>
+                      <td>09-Jan-2019</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>TBC</td>
+                      <td>TBC</td>
+                      <td>TBC</td>
+                      <td>TBC</td>
+                      <td>TBC</td>
+                      <td>Yes</td>
+                      <td class="numeric">27594502</td>
+                      <td>01-Oct-2018</td>
+                      <td>1</td>
+                      <td>Yes</td>
+                      <td>07-Nov-2018</td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+
+          </div>
+        </fieldset>
+
+        <!-- button link
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+        -->
+
+        <a href="#" role="button" class="button">Delete</a>
+
+      </form>
+
+      <hr />
+      <p><a href="#">Print this page</a></p>
+      <p><a href="/employer-services.html">Back to Employer Services home</a></p>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

@@ -1,0 +1,135 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  GS184 - Notifications - Pensions Online - NHSBSA
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="service-header">
+    <ul class="list">
+      <li><a class="log-out-link" id="logout-link" href="/employer-service/fic/logout">Sign out</a></li>
+      <li><a class="log-out-link" id="change-password-link" href="/employer-service/fic/change-password">Change your password</a></li>
+    </ul>
+    <a href="#" class="link-back">Back</a>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        <span class="heading-secondary">Pensions Online - Notifications</span>
+        GS184
+      </h1>
+
+      <form action="" method="get" class="form">
+        <fieldset>
+          <legend class="visuallyhidden">GS184</legend>
+
+          <div class="form-text">
+
+            <p>You are currently logged-in as an Employer for EA 4824</p>
+            <p>To select which records you would like to view, please enter one of the options below:</p>
+
+            <div class="form-group">
+              <div class="multiple-choice">
+                <input id="example-contact-by-email" type="radio" name="radio-record-group" value="Yes">
+                <label for="example-contact-by-email">All records</label>
+              </div>
+
+              <div class="multiple-choice" data-target="one-member">
+                <input id="example-contact-by-phone" type="radio" name="radio-record-group" value="No">
+                <label for="example-contact-by-phone">One member</label>
+              </div>
+              <div class="panel panel-border-narrow js-hidden" id="one-member">
+                <label class="form-label" for="contact-phone">Enter NI number</label>
+                <input class="form-control" name="contact-phone" type="text" id="contact-phone">
+              </div>
+
+              <div class="multiple-choice" data-target="processed-date">
+                <input id="example-contact-by-text" type="radio" name="radio-record-group" value="Processed date">
+                <label for="example-contact-by-text">Processed date</label>
+              </div>
+              <div class="panel panel-border-narrow js-hidden" id="processed-date">
+                <label class="form-label" for="contact-text-message"><span class="form-hint">Format dd/mm/yyyy</span></label>
+                <div class="form-date">
+                  <div class="form-group form-group-day">
+                    <label for="period-from-day">Day</label> <input class="form-control" id="period-from-day" max="31" min="0"
+                    name="period-from-day" pattern="[0-9]*" type="number">
+                  </div>
+                  <div class="form-group form-group-month">
+                    <label for="period-from-month">Month</label> <input class="form-control" id="period-from-month" max="12" min="0"
+                    name="period-from-month" pattern="[0-9]*" type="number">
+                  </div>
+                  <div class="form-group form-group-year">
+                    <label for="period-from-year">Year</label> <input class="form-control" id="period-from-year" max="2014" min="0"
+                    name="period-from-year" pattern="[0-9]*" type="number">
+                  </div>
+                </div>
+              </div>
+
+              <div class="multiple-choice" data-target="between-processed-date">
+                <input id="example-contact-by-text" type="radio" name="radio-record-group" value="Between processed dates">
+                <label for="example-contact-by-text">Between processed dates</label>
+              </div>
+              <div class="panel panel-border-narrow js-hidden" id="between-processed-date">
+                <label class="form-label" for="contact-text-message"><span class="form-hint">Format dd/mm/yyyy</span></label>
+                <div class="form-date">
+                  <div class="form-group form-group-day">
+                    <label for="period-from-day">Day</label> <input class="form-control" id="period-from-day" max="31" min="0"
+                    name="period-from-day" pattern="[0-9]*" type="number">
+                  </div>
+                  <div class="form-group form-group-month">
+                    <label for="period-from-month">Month</label> <input class="form-control" id="period-from-month" max="12" min="0"
+                    name="period-from-month" pattern="[0-9]*" type="number">
+                  </div>
+                  <div class="form-group form-group-year">
+                    <label for="period-from-year">Year</label> <input class="form-control" id="period-from-year" max="2014" min="0"
+                    name="period-from-year" pattern="[0-9]*" type="number">
+                  </div>
+                </div>
+                <p style="clear: both;"><br />to</p>
+                <div class="form-date">
+                  <div class="form-group form-group-day">
+                    <label for="period-from-day">Day</label> <input class="form-control" id="period-from-day" max="31" min="0"
+                    name="period-from-day" pattern="[0-9]*" type="number">
+                  </div>
+                  <div class="form-group form-group-month">
+                    <label for="period-from-month">Month</label> <input class="form-control" id="period-from-month" max="12" min="0"
+                    name="period-from-month" pattern="[0-9]*" type="number">
+                  </div>
+                  <div class="form-group form-group-year">
+                    <label for="period-from-year">Year</label> <input class="form-control" id="period-from-year" max="2014" min="0"
+                    name="period-from-year" pattern="[0-9]*" type="number">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </fieldset>
+
+        <p>To delete records processed on a certain date or between 2 dates, click <a href="#">here</a></p>
+
+        <!-- button link
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+        -->
+
+        <a href="#" role="button" class="button">Submit</a>
+
+      </form>
+
+
+      <hr />
+      <p><a href="#">Print this page</a></p>
+      <p><a href="/employer-services.html">Back to Employer Services home</a></p>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
