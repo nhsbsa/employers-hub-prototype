@@ -1,0 +1,148 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  Protective Eligibility Notifications - Notifications - Pensions Online - NHSBSA
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main" style="max-width: 95%;">
+
+  <div class="service-header">
+    <ul class="list">
+      <li><a class="log-out-link" id="logout-link" href="/employer-service/fic/logout">Sign out</a></li>
+      <li><a class="log-out-link" id="change-password-link" href="/employer-service/fic/change-password">Change your password</a></li>
+    </ul>
+    <a href="#" class="link-back">Back</a>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-full-width">
+
+      <h1 class="heading-xlarge">
+        <span class="heading-secondary">Pensions Online - Notifications</span>
+        Protective Eligibility Notifications
+      </h1>
+
+      <form action="" method="get" class="form">
+        <fieldset>
+          <legend class="visuallyhidden">Protective Eligibility Notifications</legend>
+
+          <div class="form-text">
+
+            <h3 class="heading-medium">Search by</h3>
+
+            <div class="form-group">
+              <div class="inline">
+                <div class="multiple-choice">
+                  <input id="notification-1" type="radio" name="record-group" value="Member">
+                  <label for="notification-1">Member</label>
+                </div>
+                <div class="multiple-choice">
+                  <input id="notification-2" type="radio" name="record-group" value="NI number">
+                  <label for="notification-2">NI number</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input id="search-text" type="text" name="search-text">
+            </div>
+            <a href="#" role="button" class="button">Search</a>
+
+            <div class="form-group">
+                <table>
+                  <thead>
+                    <tr>
+                      <th scope="col">Surname</th>
+                      <th scope="col">Forename</th>
+                      <th scope="col">Member</th>
+                      <th scope="col">NI number</th>
+                      <th scope="col">Old scheme</th>
+                      <th scope="col">Eligible for protection</th>
+                      <th scope="col">Protection expiry date</th>
+                      <th scope="col">Eligibility to opt out of protection</th>
+                      <th scope="col">Opted to forgo protection</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>TBC</td>
+                      <td>TBC</td>
+                      <td>TBC</td>
+                      <td>TBC</td>
+                      <td>2008</td>
+                      <td>None</td>
+                      <td></td>
+                      <td>No</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>TBC</td>
+                      <td>TBC</td>
+                      <td>TBC</td>
+                      <td>TBC</td>
+                      <td>2008</td>
+                      <td>None</td>
+                      <td></td>
+                      <td>No</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>TBC</td>
+                      <td>TBC</td>
+                      <td>TBC</td>
+                      <td>TBC</td>
+                      <td>1995</td>
+                      <td>Full</td>
+                      <td></td>
+                      <td>No</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>TBC</td>
+                      <td>TBC</td>
+                      <td>TBC</td>
+                      <td>TBC</td>
+                      <td>2008</td>
+                      <td>Full</td>
+                      <td></td>
+                      <td>Yes</td>
+                      <td>No</td>
+                    </tr>
+                    <tr>
+                      <td>TBC</td>
+                      <td>TBC</td>
+                      <td>TBC</td>
+                      <td>TBC</td>
+                      <td>1995</td>
+                      <td>Full</td>
+                      <td></td>
+                      <td>No</td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+
+          </div>
+        </fieldset>
+
+        <!-- button link
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+        -->
+
+        <a href="#" role="button" class="button">Delete</a>
+
+      </form>
+
+      <hr />
+      <p><a href="#">Print this page</a></p>
+      <p><a href="/employer-services.html">Back to Employer Services home</a></p>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
