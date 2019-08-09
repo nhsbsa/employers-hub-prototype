@@ -1,0 +1,56 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  TBC - Notifications - Pensions Online - NHSBSA
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="service-header">
+    <ul class="list">
+      <li><a class="log-out-link" id="logout-link" href="/employer-service/fic/logout">Sign out</a></li>
+      <li><a class="log-out-link" id="change-password-link" href="/employer-service/fic/change-password">Change your password</a></li>
+    </ul>
+    <a href="#" class="link-back">Back</a>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        <span class="heading-secondary">Pensions Online - Notifications</span>
+        View or delete option
+      </h1>
+
+      <form action="" method="get" class="form">
+        <fieldset>
+          <legend class="visuallyhidden">View or delete option</legend>
+
+          <div class="form-text">
+
+            <div class="form-group">
+              <p>Would you like to view or delete the notification for member NINO TBC?</p>
+            </div>
+
+          </div>
+        </fieldset>
+
+        <!-- button link
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+        -->
+
+        <a href="#" role="button" class="button">View letter</a>
+        <a href="#" role="button" class="button">Delete notification</a>
+        <a href="#" role="button" class="button">Cancel</a>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
