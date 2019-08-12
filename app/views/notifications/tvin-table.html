@@ -1,0 +1,122 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  TVIN Notifications - Notifications - Pensions Online - NHSBSA
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main" style="max-width: 95%;">
+
+  <div class="service-header">
+    <ul class="list">
+      <li><a class="log-out-link" id="logout-link" href="/employer-service/fic/logout">Sign out</a></li>
+      <li><a class="log-out-link" id="change-password-link" href="/employer-service/fic/change-password">Change your password</a></li>
+    </ul>
+    <a href="#" class="link-back">Back</a>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-full-width">
+
+      <h1 class="heading-xlarge">
+        <span class="heading-secondary">Pensions Online - Notifications</span>
+        TVIN Notifications
+      </h1>
+
+      <form action="" method="get" class="form">
+        <fieldset>
+          <legend class="visuallyhidden">TVIN Notifications</legend>
+
+          <div class="form-text">
+
+            <h3 class="heading-medium">Search by</h3>
+            <div class="form-group">
+              <div class="inline">
+                <div class="multiple-choice">
+                  <input id="notification-1" type="radio" name="record-group" value="Member">
+                  <label for="notification-1">Member</label>
+                </div>
+                <div class="multiple-choice">
+                  <input id="notification-2" type="radio" name="record-group" value="NI number">
+                  <label for="notification-2">NI number</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input id="search-text" type="text" name="search-text">
+            </div>
+            <a href="#" role="button" class="button">Search</a>
+
+            <h3 class="heading-medium">EA4451 - TVIN Notifications</h3>
+            <div class="form-group">
+                <table>
+                  <thead>
+                    <tr>
+                      <th scope="col">Surname</th>
+                      <th scope="col">Forename</th>
+                      <th scope="col">NI number</th>
+                      <th scope="col">SD number</th>
+                      <th scope="col">Scheme</th>
+                      <th scope="col">Scheme type</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>TBC</td>
+                      <td>TBC</td>
+                      <td>TBC</td>
+                      <td>TBC</td>
+                      <td>2015</td>
+                      <td>INNERCL</td>
+                    </tr>
+                    <tr>
+                      <td>TBC</td>
+                      <td>TBC</td>
+                      <td>TBC</td>
+                      <td>TBC</td>
+                      <td>2015</td>
+                      <td>NONCLUB</td>
+                    </tr>
+                    <tr>
+                      <td>TBC</td>
+                      <td>TBC</td>
+                      <td>TBC</td>
+                      <td>TBC</td>
+                      <td>2015</td>
+                      <td>NONCLUB</td>
+                    </tr>
+                    <tr>
+                      <td>TBC</td>
+                      <td>TBC</td>
+                      <td>TBC</td>
+                      <td>TBC</td>
+                      <td>2015</td>
+                      <td>NONCLUB</td>
+                    </tr>
+                    <tr>
+                      <td>TBC</td>
+                      <td>TBC</td>
+                      <td>TBC</td>
+                      <td>TBC</td>
+                      <td>2015</td>
+                      <td>NONCLUB</td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+
+          </div>
+        </fieldset>
+
+      </form>
+
+      <hr />
+      <p><a href="#">Print this page</a></p>
+      <p><a href="/employer-services.html">Back to Employer Services home</a></p>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
